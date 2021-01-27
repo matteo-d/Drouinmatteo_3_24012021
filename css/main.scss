@@ -75,8 +75,17 @@ a.link_outside {
     opacity: 0;
   }
 }
+header {
+  background-color: red;
+}
+h1 {
+  background-color: #0c8e6f;
+}
+.localisation {
+  background-color: red;
+}
 
-// HEADER !
+/* HEADER !
 header {
   display: flex;
   justify-content: center;
@@ -143,7 +152,7 @@ header {
     }
   }
 }
-
+*/
 // Comment ça marche !
 h2 {
   padding-top: 0.5rem;
@@ -254,14 +263,14 @@ h2 {
   flex: 6;
   border-bottom-left-radius: 13px;
   cursor: pointer;
-  h3 {
+  h4 {
     font-family: Roboto, "Times New Roman", Times, serif;
     font-weight: bold;
     margin-bottom: 0rem;
     padding-left: 0.5rem;
     margin-top: 0.7rem;
   }
-  h4 {
+  h5 {
     font-family: Roboto, "Times New Roman", Times, serif;
     font-weight: normal;
     color: #7e7e7e;
@@ -354,8 +363,8 @@ h2 {
       height: 10rem;
     }
   }
-  h3,
-  h4 {
+  h4,
+  h5 {
     font-size: 1rem;
   }
   i.far.fa-heart.fa-stack-1x {
