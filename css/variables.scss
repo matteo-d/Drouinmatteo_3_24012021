@@ -1,0 +1,86 @@
+// Ici variables Fonctions et Mixins!
+
+// Colors!
+
+//mixins!
+
+@mixin flexAndColumn {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flexAndJustify {
+  display: flex;
+  justify-content: center;
+}
+@mixin flexandalign {
+  display: flex;
+  align-items: center;
+}
+
+@mixin motoOneAndTwo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: auto;
+}
+@mixin motoThreeAndFour {
+  margin: auto;
+  color: #4d4d4d;
+}
+@mixin btn-style {
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  color: #fdfafe;
+  border-radius: 30px;
+  border-style: none;
+  font-weight: bold;
+  transition: all 200ms;
+}
+@mixin hoverButtonStyle {
+  transform: scale(1.01);
+  box-shadow: 3px 3px 3px #7e7e7e;
+  border-style: none;
+  opacity: 0.9;
+}
+@mixin footer {
+  footer {
+    background-color: #353535;
+    color: #f7f7f7;
+    padding-left: 1.5rem;
+
+    h5 {
+      font-family: Shrikhand, "Times New Roman", Times, serif;
+      font-size: 1.4rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.4rem;
+    }
+    h6 {
+      flex: 8;
+      font-size: 1rem;
+      margin: 0rem;
+      font-weight: normal;
+      .fa-utensils,
+      .fa-hands-helping {
+        flex: 1;
+        margin: 0.4rem;
+        margin-left: 0rem;
+      }
+    }
+
+    .footer_legal {
+      margin: 0rem;
+      margin-top: 0.4rem;
+    }
+
+    .footer_contact {
+      margin-top: 0.4rem;
+      margin-bottom: 1.5rem;
+      text-decoration: none;
+      color: white;
+    }
+    .mail {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+// Variables!

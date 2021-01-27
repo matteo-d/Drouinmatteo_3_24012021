@@ -1,0 +1,101 @@
+  ----------------------------------------------------------GLOBAL--------------------------------------------------------------
+.Couleurs utilisés :
+Primaire Secondaire Tertiaire
+#9356DC  #FF79DA     #99E2D0
+
+=> A FAIRE Creer variables dans variables.scss et intégrer les couleurs par leur nom variables
+
+.Utilisation de SASS:
+
+=> OK
+
+.Responsive all device:
+
+=> OK
+
+.W3C:
+
+=> OK
+
+.Firefox compatible:
+
+=> OK
+
+.Affichage location restaurant:
+
+=> OK
+
+.Redirection vers page menu :
+
+=> OK
+
+.4 Pages de menu :
+
+=> OK
+
+.Footer identique toutes les Pages :
+
+=> OK voir mixins footer dans variables.scss 
+
+.Header sur toutes les pages et retour arriere sur pages menu 
+
+=> OK
+
+.Images compressés
+
+=> OK 
+
+  ----------------------------------------------------------BOUTONS--------------------------------------------------------------
+
+.Au survol couleur legerement plus eclairci + ombre portée
+
+=> OK
+
+.Animation coeur 
+
+=> OK au survol 
+
+ ----------------------------------------------------------Acceuil--------------------------------------------------------------
+
+.Loading spinner libre 
+
+=> OK 
+
+ ----------------------------------------------------------Menus--------------------------------------------------------------
+
+.Appartition progressive par bloc entrée plats dessert 
+
+=> OK 
+
+.Animation checkbox 
+
+=> OK 
+
+.Ellipse pour petit écran si checkbox passe sur le text
+
+=> OK 
+
+.Voir si anim' respecte les préconisation openclassroom ( only transform opacity a vérifier etc )
+
+Anim how it work avec transofrm scale  OK 
+
+Anim arrivé sur page "hide loading spinner" avec z-index => bof mais pas trouvé autre soluce 
+
+Anim heart_animation avec opacity et transform OK 
+
+animation_background avec transform et opacity OK 
+
+animation progressive_appearence avec opacity OK 
+
+animation bouncy heart ( à retirer probablement ) avec transform OK 
+
+animation circle_spinning avec transform OK 
+
+=> OK 
+-------------------------------------------------------- Reste à Faire ----------------------------------------------------------
+
+ 1,2,3 de la page menu à mettre en rond not done 
+
+- cleaner et raccourcir le code avec fonction et mixins
+
+
