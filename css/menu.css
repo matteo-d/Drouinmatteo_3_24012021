@@ -4,8 +4,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: Roboto, "Times New Roman", Times, serif;
   margin: 0;
   padding: 0;
@@ -38,7 +38,7 @@ header .fa-arrow-left {
 
 header .fa-arrow-left:hover {
   -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 img.restaurantpicture {
@@ -64,8 +64,8 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f6f6f6;
   margin-top: -1rem;
   border-top-right-radius: 50px;
@@ -74,8 +74,8 @@ h2 {
 
 .restaurantname h1 {
   -webkit-box-flex: 6;
-  -ms-flex: 6;
-  flex: 6;
+      -ms-flex: 6;
+          flex: 6;
   padding-left: 1.5rem;
   font-family: Shrikhand, "Times New Roman", Times, serif;
   font-size: 1.5rem;
@@ -83,13 +83,13 @@ h2 {
 
 .restaurantname .fa-heart {
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding-right: 1.5rem;
   font-size: 1.5rem;
   color: gray;
   -webkit-animation: bouncyHeart 1.5s ease-in-out 4s alternate 1;
-  animation: bouncyHeart 1.5s ease-in-out 4s alternate 1;
+          animation: bouncyHeart 1.5s ease-in-out 4s alternate 1;
 }
 
 section.main {
@@ -98,8 +98,8 @@ section.main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #f6f6f6;
 }
 
@@ -118,7 +118,7 @@ section.main_container_entree {
 
 section.main > section.main_container_entree {
   -webkit-animation: progressive_appearence 1s ease-in-out both 0.2s;
-  animation: progressive_appearence 1s ease-in-out both 0.2s;
+          animation: progressive_appearence 1s ease-in-out both 0.2s;
 }
 
 section.main_container_plat {
@@ -136,7 +136,7 @@ section.main_container_plat {
 
 section.main > section.main_container_plat {
   -webkit-animation: progressive_appearence 1.1s ease-in-out both 0.6s;
-  animation: progressive_appearence 1.1s ease-in-out both 0.6s;
+          animation: progressive_appearence 1.1s ease-in-out both 0.6s;
 }
 
 section.main_container_dessert {
@@ -154,20 +154,20 @@ section.main_container_dessert {
 
 section.main > section.main_container_dessert {
   -webkit-animation: progressive_appearence 1.3s ease-in-out both 1s;
-  animation: progressive_appearence 1.3s ease-in-out both 1s;
+          animation: progressive_appearence 1.3s ease-in-out both 1s;
 }
 
 .main_container_unanimated {
   -webkit-box-flex: 5;
-  -ms-flex: 5;
-  flex: 5;
+      -ms-flex: 5;
+          flex: 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow: hidden;
 }
 
@@ -193,14 +193,14 @@ h4 {
 
 .main_container_price {
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 p.price {
@@ -215,17 +215,17 @@ p.price {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #99e2d0;
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
   opacity: 0;
   -webkit-animation: animation_background_reverse 0.3s linear both;
-  animation: animation_background_reverse 0.3s linear both;
+          animation: animation_background_reverse 0.3s linear both;
 }
 
 .fa-check-circle {
@@ -240,13 +240,12 @@ p.price {
 
 .main_container_entree:hover .main_container_animation {
   -webkit-animation: animation_background 0.5s ease-in-out both;
-  animation: animation_background 0.5s ease-in-out both;
+          animation: animation_background 0.5s ease-in-out both;
 }
 
 .main_container_entree:hover .main_container_animation .fa-check-circle {
-  -webkit-animation: circle_spinning 0.3s cubic-bezier(0.34, 0.48, 0.92, 0.66)
-    both;
-  animation: circle_spinning 0.3s cubic-bezier(0.34, 0.48, 0.92, 0.66) both;
+  -webkit-animation: circle_spinning 0.3s cubic-bezier(0.34, 0.48, 0.92, 0.66) both;
+          animation: circle_spinning 0.3s cubic-bezier(0.34, 0.48, 0.92, 0.66) both;
 }
 
 .main_container_plat {
@@ -256,13 +255,12 @@ p.price {
 
 .main_container_plat:hover .main_container_animation {
   -webkit-animation: animation_background 0.3s ease-in-out both;
-  animation: animation_background 0.3s ease-in-out both;
+          animation: animation_background 0.3s ease-in-out both;
 }
 
 .main_container_plat:hover .main_container_animation .fa-check-circle {
-  -webkit-animation: circle_spinning 0.3s cubic-bezier(0.34, 0.48, 0.92, 0.66)
-    both;
-  animation: circle_spinning 0.3s cubic-bezier(0.34, 0.48, 0.92, 0.66) both;
+  -webkit-animation: circle_spinning 0.3s cubic-bezier(0.34, 0.48, 0.92, 0.66) both;
+          animation: circle_spinning 0.3s cubic-bezier(0.34, 0.48, 0.92, 0.66) both;
 }
 
 .main_container_dessert {
@@ -272,13 +270,12 @@ p.price {
 
 .main_container_dessert:hover .main_container_animation {
   -webkit-animation: animation_background 0.3s linear both;
-  animation: animation_background 0.3s linear both;
+          animation: animation_background 0.3s linear both;
 }
 
 .main_container_dessert:hover .main_container_animation .fa-check-circle {
-  -webkit-animation: circle_spinning 0.3s cubic-bezier(0.34, 0.48, 0.92, 0.66)
-    both;
-  animation: circle_spinning 0.3s cubic-bezier(0.34, 0.48, 0.92, 0.66) both;
+  -webkit-animation: circle_spinning 0.3s cubic-bezier(0.34, 0.48, 0.92, 0.66) both;
+          animation: circle_spinning 0.3s cubic-bezier(0.34, 0.48, 0.92, 0.66) both;
 }
 
 @-webkit-keyframes progressive_appearence {
@@ -302,48 +299,48 @@ p.price {
 @-webkit-keyframes animation_background {
   0% {
     -webkit-transform: translate(0rem);
-    transform: translate(0rem);
+            transform: translate(0rem);
     opacity: 0;
   }
   10% {
     -webkit-transform: translate(0.5rem);
-    transform: translate(0.5rem);
+            transform: translate(0.5rem);
   }
   20% {
     -webkit-transform: translate(1rem);
-    transform: translate(1rem);
+            transform: translate(1rem);
   }
   30% {
     -webkit-transform: translate(1.5rem);
-    transform: translate(1.5rem);
+            transform: translate(1.5rem);
   }
   40% {
     -webkit-transform: translate(2rem);
-    transform: translate(2rem);
+            transform: translate(2rem);
   }
   50% {
     -webkit-transform: translate(2.5rem);
-    transform: translate(2.5rem);
+            transform: translate(2.5rem);
   }
   60% {
     -webkit-transform: translate(3rem);
-    transform: translate(3rem);
+            transform: translate(3rem);
   }
   70% {
     -webkit-transform: translate(3.5rem);
-    transform: translate(3.5rem);
+            transform: translate(3.5rem);
   }
   80% {
     -webkit-transform: translate(4rem);
-    transform: translate(4rem);
+            transform: translate(4rem);
   }
   90% {
     -webkit-transform: translate(4.5rem);
-    transform: translate(4.5rem);
+            transform: translate(4.5rem);
   }
   100% {
     -webkit-transform: translate(5rem);
-    transform: translate(5rem);
+            transform: translate(5rem);
     opacity: 1;
   }
 }
@@ -351,48 +348,48 @@ p.price {
 @keyframes animation_background {
   0% {
     -webkit-transform: translate(0rem);
-    transform: translate(0rem);
+            transform: translate(0rem);
     opacity: 0;
   }
   10% {
     -webkit-transform: translate(0.5rem);
-    transform: translate(0.5rem);
+            transform: translate(0.5rem);
   }
   20% {
     -webkit-transform: translate(1rem);
-    transform: translate(1rem);
+            transform: translate(1rem);
   }
   30% {
     -webkit-transform: translate(1.5rem);
-    transform: translate(1.5rem);
+            transform: translate(1.5rem);
   }
   40% {
     -webkit-transform: translate(2rem);
-    transform: translate(2rem);
+            transform: translate(2rem);
   }
   50% {
     -webkit-transform: translate(2.5rem);
-    transform: translate(2.5rem);
+            transform: translate(2.5rem);
   }
   60% {
     -webkit-transform: translate(3rem);
-    transform: translate(3rem);
+            transform: translate(3rem);
   }
   70% {
     -webkit-transform: translate(3.5rem);
-    transform: translate(3.5rem);
+            transform: translate(3.5rem);
   }
   80% {
     -webkit-transform: translate(4rem);
-    transform: translate(4rem);
+            transform: translate(4rem);
   }
   90% {
     -webkit-transform: translate(4.5rem);
-    transform: translate(4.5rem);
+            transform: translate(4.5rem);
   }
   100% {
     -webkit-transform: translate(5rem);
-    transform: translate(5rem);
+            transform: translate(5rem);
     opacity: 1;
   }
 }
@@ -400,42 +397,42 @@ p.price {
 @-webkit-keyframes bouncyHeart {
   0% {
     -webkit-transform: rotate(33deg);
-    transform: rotate(33deg);
+            transform: rotate(33deg);
     -webkit-transform: translateY(12px);
-    transform: translateY(12px);
+            transform: translateY(12px);
   }
   50% {
     -webkit-transform: translateX(25px);
-    transform: translateX(25px);
+            transform: translateX(25px);
     -webkit-transform: rotate(33deg);
-    transform: rotate(33deg);
+            transform: rotate(33deg);
   }
   100% {
     -webkit-transform: translateX(-25px);
-    transform: translateX(-25px);
+            transform: translateX(-25px);
     -webkit-transform: rotateX(33deg);
-    transform: rotateX(33deg);
+            transform: rotateX(33deg);
   }
 }
 
 @keyframes bouncyHeart {
   0% {
     -webkit-transform: rotate(33deg);
-    transform: rotate(33deg);
+            transform: rotate(33deg);
     -webkit-transform: translateY(12px);
-    transform: translateY(12px);
+            transform: translateY(12px);
   }
   50% {
     -webkit-transform: translateX(25px);
-    transform: translateX(25px);
+            transform: translateX(25px);
     -webkit-transform: rotate(33deg);
-    transform: rotate(33deg);
+            transform: rotate(33deg);
   }
   100% {
     -webkit-transform: translateX(-25px);
-    transform: translateX(-25px);
+            transform: translateX(-25px);
     -webkit-transform: rotateX(33deg);
-    transform: rotateX(33deg);
+            transform: rotateX(33deg);
   }
 }
 
@@ -464,94 +461,94 @@ p.price {
 @-webkit-keyframes circle_spinning {
   0% {
     -webkit-transform: rotate(15deg);
-    transform: rotate(15deg);
+            transform: rotate(15deg);
   }
   10% {
     -webkit-transform: rotate(36deg);
-    transform: rotate(36deg);
+            transform: rotate(36deg);
   }
   20% {
     -webkit-transform: rotate(72deg);
-    transform: rotate(72deg);
+            transform: rotate(72deg);
   }
   30% {
     -webkit-transform: rotate(108deg);
-    transform: rotate(108deg);
+            transform: rotate(108deg);
   }
   40% {
     -webkit-transform: rotate(144deg);
-    transform: rotate(144deg);
+            transform: rotate(144deg);
   }
   50% {
     -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   60% {
     -webkit-transform: rotate(216deg);
-    transform: rotate(216deg);
+            transform: rotate(216deg);
   }
   70% {
     -webkit-transform: rotate(252deg);
-    transform: rotate(252deg);
+            transform: rotate(252deg);
   }
   80% {
     -webkit-transform: rotate(289deg);
-    transform: rotate(289deg);
+            transform: rotate(289deg);
   }
   90% {
     -webkit-transform: rotate(324deg);
-    transform: rotate(324deg);
+            transform: rotate(324deg);
   }
   100% {
     -webkit-transform: rotateX(360deg);
-    transform: rotateX(360deg);
+            transform: rotateX(360deg);
   }
 }
 
 @keyframes circle_spinning {
   0% {
     -webkit-transform: rotate(15deg);
-    transform: rotate(15deg);
+            transform: rotate(15deg);
   }
   10% {
     -webkit-transform: rotate(36deg);
-    transform: rotate(36deg);
+            transform: rotate(36deg);
   }
   20% {
     -webkit-transform: rotate(72deg);
-    transform: rotate(72deg);
+            transform: rotate(72deg);
   }
   30% {
     -webkit-transform: rotate(108deg);
-    transform: rotate(108deg);
+            transform: rotate(108deg);
   }
   40% {
     -webkit-transform: rotate(144deg);
-    transform: rotate(144deg);
+            transform: rotate(144deg);
   }
   50% {
     -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   60% {
     -webkit-transform: rotate(216deg);
-    transform: rotate(216deg);
+            transform: rotate(216deg);
   }
   70% {
     -webkit-transform: rotate(252deg);
-    transform: rotate(252deg);
+            transform: rotate(252deg);
   }
   80% {
     -webkit-transform: rotate(289deg);
-    transform: rotate(289deg);
+            transform: rotate(289deg);
   }
   90% {
     -webkit-transform: rotate(324deg);
-    transform: rotate(324deg);
+            transform: rotate(324deg);
   }
   100% {
     -webkit-transform: rotateX(360deg);
-    transform: rotateX(360deg);
+            transform: rotateX(360deg);
   }
 }
 
@@ -560,22 +557,16 @@ div.container_button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 2rem;
 }
 
 .button_visit {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right bottom,
-    from(#ff79da),
-    to(#9356dc)
-  );
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   color: #fdfafe;
   border-radius: 30px;
@@ -587,11 +578,11 @@ div.container_button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 3em;
   margin-bottom: 2.5rem;
   font-size: 1em;
@@ -600,9 +591,9 @@ div.container_button {
 
 .button_visit:hover {
   -webkit-transform: scale(1.01);
-  transform: scale(1.01);
+          transform: scale(1.01);
   -webkit-box-shadow: 3px 3px 3px #7e7e7e;
-  box-shadow: 3px 3px 3px #7e7e7e;
+          box-shadow: 3px 3px 3px #7e7e7e;
   border-style: none;
   opacity: 0.9;
 }
@@ -623,8 +614,8 @@ footer h5 {
 
 footer h6 {
   -webkit-box-flex: 8;
-  -ms-flex: 8;
-  flex: 8;
+      -ms-flex: 8;
+          flex: 8;
   font-size: 1rem;
   margin: 0rem;
   font-weight: normal;
@@ -633,8 +624,8 @@ footer h6 {
 footer h6 .fa-utensils,
 footer h6 .fa-hands-helping {
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin: 0.4rem;
   margin-left: 0rem;
 }
@@ -770,11 +761,11 @@ footer .mail {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   footer h5 {
     font-size: 1.5rem;

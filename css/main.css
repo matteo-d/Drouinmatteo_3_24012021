@@ -1,11 +1,5 @@
+@charset "UTF-8";
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   font-family: Roboto, "Times New Roman", Times, serif;
   margin: 0;
   padding: 0;
@@ -26,37 +20,19 @@ a.link_outside {
   color: black;
 }
 
+/* ANIMATION ARRIVEE SUR PAGE !
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: white;
-  -webkit-animation: hideLoadingSpinner 0.5s ease-out 2.4s 1 forwards;
-          animation: hideLoadingSpinner 0.5s ease-out 2.4s 1 forwards;
+  animation: hideLoadingSpinner 0.5s ease-out 2.4s 1 forwards;
   opacity: 1;
   z-index: 1;
 }
-
-@-webkit-keyframes hideLoadingSpinner {
-  0% {
-    z-index: 1;
-    opacity: 1;
-  }
-  100% {
-    z-index: -2;
-    opacity: 0;
-  }
-}
-
 @keyframes hideLoadingSpinner {
   0% {
     z-index: 1;
@@ -67,12 +43,10 @@ a.link_outside {
     opacity: 0;
   }
 }
-
 .container span {
   text-transform: uppercase;
   display: block;
 }
-
 .text1 {
   color: #9356dc;
   font-family: Shrikhand, "Times New Roman", Times, serif;
@@ -82,27 +56,9 @@ a.link_outside {
   margin-bottom: 20px;
   background: white;
   position: relative;
-  -webkit-animation: loadingSpinner 1.7s ease-in 0.5s 1 forwards;
-          animation: loadingSpinner 1.7s ease-in 0.5s 1 forwards;
+  animation: loadingSpinner 1.7s ease-in 0.5s 1 forwards;
   z-index: 1;
   opacity: 1;
-}
-
-@-webkit-keyframes loadingSpinner {
-  0% {
-    letter-spacing: 0.2rem;
-  }
-  50% {
-    color: #ff79da;
-  }
-  90% {
-    letter-spacing: 1rem;
-    opacity: 1;
-  }
-  100% {
-    z-index: -3;
-    opacity: 0;
-  }
 }
 
 @keyframes loadingSpinner {
@@ -120,27 +76,8 @@ a.link_outside {
     z-index: -3;
     opacity: 0;
   }
-}
-
+} */
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 0.5rem;
-  padding-top: 1rem;
-}
-
-header .logo {
-  width: 11rem;
-}
-
-.introducing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,167 +85,165 @@ header .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  font-family: Shrikhand, "Times New Roman", Times, serif;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  margin-bottom: 0.7rem;
+}
+
+header .localisation {
+  padding-right: 1.2rem;
+}
+
+header .localisation .fa,
+header .localisation .fas {
+  padding-right: 0.6rem;
+}
+
+header article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header article h3 {
+  font-size: 1.5rem;
+  padding: 1rem 2.5rem 0rem 2.5rem;
+}
+
+/* HEADER !
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  .logo {
+    width: 11rem;
+  }
+}
+// Introduction !
+.introducing {
+  @include flexAndColumn;
   background-color: #f6f6f6;
   padding-bottom: 2em;
-}
+  .introducing_yourlocation {
+    @include flexAndJustify;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    background-color: #eaeaea;
+    div.location {
+      display: flex;
+      font-size: 1rem;
+      color: #353535;
+      font-weight: bold;
+      .fa-map-marker-alt {
+        padding-right: 0.7rem;
+      }
+      h1 {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        font-size: 1rem;
+      }
+    }
+  }
 
-.introducing .introducing_yourlocation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 0.9rem;
-  padding-bottom: 0.9rem;
-  background-color: #eaeaea;
-}
+  p.moto1 {
+    @include motoOneAndTwo;
+    padding-top: 1.5rem;
+    font-size: 1.3rem;
+  }
+  p.moto2 {
+    @include motoOneAndTwo;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  p.moto3 {
+    @include motoThreeAndFour;
+  }
+  p.moto4 {
+    @include motoThreeAndFour;
+    padding-bottom: 1.5rem;
+  }
 
-.introducing .introducing_yourlocation div.location {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1rem;
-  color: #353535;
-  font-weight: bold;
+  .button_visit {
+    @include btn-style;
+    margin: auto;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+    &:hover {
+      @include hoverButtonStyle;
+    }
+  }
 }
-
-.introducing .introducing_yourlocation div.location .fa-map-marker-alt {
-  padding-right: 0.7rem;
-}
-
-.introducing .introducing_yourlocation div.location h1 {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
-  font-size: 1rem;
-}
-
-.introducing p.moto1 {
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin: auto;
-  padding-top: 1.5rem;
-  font-size: 1.3rem;
-}
-
-.introducing p.moto2 {
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin: auto;
-  padding-bottom: 1rem;
-  font-size: 1.3rem;
-}
-
-.introducing p.moto3 {
-  margin: auto;
-  color: #4d4d4d;
-}
-
-.introducing p.moto4 {
-  margin: auto;
-  color: #4d4d4d;
-  padding-bottom: 1.5rem;
-}
-
-.introducing .button_visit {
-  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(to bottom right, #ff79da, #9356dc);
-  color: #fdfafe;
-  border-radius: 30px;
-  border-style: none;
-  font-weight: bold;
-  -webkit-transition: all 200ms;
-  transition: all 200ms;
-  margin: auto;
-  padding: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  font-size: 1rem;
-}
-
-.introducing .button_visit:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
-  -webkit-box-shadow: 3px 3px 3px #7e7e7e;
-          box-shadow: 3px 3px 3px #7e7e7e;
-  border-style: none;
-  opacity: 0.9;
-}
-
+*/
+/* Comment ça marche !
 h2 {
   padding-top: 0.5rem;
   padding-left: 1rem;
 }
 
 .howitwork {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  @include flexAndColumn;
   padding-left: 1rem;
   padding-right: 1rem;
+  .howitwork_items {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    box-shadow: 2px 2px 2px #dcd5d5;
+    background-color: #f6f6f6;
+    display: flex;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    transition: all 200ms;
+  }
+  .howitwork_items:hover {
+    opacity: 0.9;
+    .fa-mobile-alt,
+    .fa-list-ul,
+    .fa-store-alt {
+      color: #9356dc;
+      transform: scale(1.09);
+    }
+  }
+  .material-icons {
+    flex: 1;
+    margin: auto;
+    border-radius: 10px;
+    margin-left: -0.5rem;
+    color: #9356dc;
+  }
+  .fa-mobile-alt,
+  .fa-list-ul,
+  .fa-store-alt {
+    margin: auto;
+    color: #7e7e7e;
+    flex: 1;
+    padding-left: 0.5rem;
+    font-size: 1.1rem;
+  }
+  p.howitwork_text {
+    flex: 8;
+    font-weight: bold;
+  }
 }
-
-.howitwork .howitwork_items {
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  -webkit-box-shadow: 2px 2px 2px #dcd5d5;
-          box-shadow: 2px 2px 2px #dcd5d5;
-  background-color: #f6f6f6;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  border-radius: 20px;
-  -webkit-transition: all 200ms;
-  transition: all 200ms;
-}
-
-.howitwork .howitwork_items:hover {
-  opacity: 0.9;
-}
-
-.howitwork .howitwork_items:hover .fa-mobile-alt,
-.howitwork .howitwork_items:hover .fa-list-ul,
-.howitwork .howitwork_items:hover .fa-store-alt {
-  color: #9356dc;
-  -webkit-transform: scale(1.09);
-          transform: scale(1.09);
-}
-
-.howitwork .material-icons {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin: auto;
-  border-radius: 10px;
-  margin-left: -0.5rem;
-  color: #9356dc;
-}
-
-.howitwork .fa-mobile-alt,
-.howitwork .fa-list-ul,
-.howitwork .fa-store-alt {
-  margin: auto;
-  color: #7e7e7e;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding-left: 0.5rem;
-  font-size: 1.1rem;
-}
-
-.howitwork p.howitwork_text {
-  -webkit-box-flex: 8;
-      -ms-flex: 8;
-          flex: 8;
-  font-weight: bold;
-}
-
+*/
 .restaurants {
   background-color: #f6f6f6;
   display: -webkit-box;
@@ -318,6 +253,9 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 2rem;
 }
 
@@ -387,7 +325,7 @@ h2 {
   cursor: pointer;
 }
 
-.restaurants_underimg_presentation h3 {
+.restaurants_underimg_presentation h4 {
   font-family: Roboto, "Times New Roman", Times, serif;
   font-weight: bold;
   margin-bottom: 0rem;
@@ -395,7 +333,7 @@ h2 {
   margin-top: 0.7rem;
 }
 
-.restaurants_underimg_presentation h4 {
+.restaurants_underimg_presentation h5 {
   font-family: Roboto, "Times New Roman", Times, serif;
   font-weight: normal;
   color: #7e7e7e;
@@ -460,75 +398,12 @@ h2 {
 }
 
 /*Footer*/
-footer {
-  background-color: #353535;
-  color: #f7f7f7;
-  padding-left: 1.5rem;
-}
-
-footer h5 {
-  font-family: Shrikhand, "Times New Roman", Times, serif;
-  font-size: 1.4rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0.4rem;
-}
-
-footer h6 {
-  -webkit-box-flex: 8;
-      -ms-flex: 8;
-          flex: 8;
-  font-size: 1rem;
-  margin: 0rem;
-  font-weight: normal;
-}
-
-footer h6 .fa-utensils,
-footer h6 .fa-hands-helping {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin: 0.4rem;
-  margin-left: 0rem;
-}
-
-footer .footer_legal {
-  margin: 0rem;
-  margin-top: 0.4rem;
-}
-
-footer .footer_contact {
-  margin-top: 0.4rem;
-  margin-bottom: 1.5rem;
-  text-decoration: none;
-  color: white;
-}
-
-footer .mail {
-  text-decoration: none;
-  color: white;
-}
-
-@media (max-width: 350px) {
+/* RESPONSIVE MOBILE !
+@media (max-width: 0px) {
   .text1 {
     font-size: 1.4rem;
   }
-  @-webkit-keyframes loadingSpinner {
-    0% {
-      letter-spacing: 0.2rem;
-    }
-    50% {
-      color: #ff79da;
-      letter-spacing: 0.7rem;
-    }
-    90% {
-      letter-spacing: 0.4rem;
-      opacity: 1;
-    }
-    100% {
-      z-index: -3;
-      opacity: 0;
-    }
-  }
+
   @keyframes loadingSpinner {
     0% {
       letter-spacing: 0.2rem;
@@ -546,6 +421,7 @@ footer .mail {
       opacity: 0;
     }
   }
+
   img.logo {
     width: 8rem;
   }
@@ -554,9 +430,9 @@ footer .mail {
   }
   .introducing .introducing_yourlocation div.location h1 {
     font-size: 0.9rem;
-  }
-  .introducing .introducing_yourlocation div.location h1 .introducing .button_visit {
-    font-size: 0.7rem;
+    .introducing .button_visit {
+      font-size: 0.7rem;
+    }
   }
   .moto3,
   .moto4 {
@@ -569,11 +445,13 @@ footer .mail {
     font-size: 0.9rem;
     margin-left: 1rem;
   }
-  .restaurants_pics .restaurants_pics_img {
-    height: 10rem;
+  .restaurants_pics {
+    .restaurants_pics_img {
+      height: 10rem;
+    }
   }
-  h3,
-  h4 {
+  h4,
+  h5 {
     font-size: 1rem;
   }
   i.far.fa-heart.fa-stack-1x {
@@ -591,6 +469,8 @@ footer .mail {
   }
 }
 
+// RESPONSIVE TABLETTE !
+
 @media (min-width: 750px) {
   .text1 {
     font-size: 4rem;
@@ -604,23 +484,7 @@ footer .mail {
     margin: auto;
     margin-bottom: 2rem;
   }
-  @-webkit-keyframes loadingSpinner {
-    0% {
-      letter-spacing: 0.2rem;
-    }
-    50% {
-      color: #ff79da;
-      letter-spacing: 0.7rem;
-    }
-    90% {
-      letter-spacing: 0.4rem;
-      opacity: 1;
-    }
-    100% {
-      z-index: -3;
-      opacity: 0;
-    }
-  }
+
   @keyframes loadingSpinner {
     0% {
       letter-spacing: 0.2rem;
@@ -647,22 +511,19 @@ footer .mail {
     padding: 1rem 0rem 1rem 0rem;
   }
   .howitwork > :first-child {
-    -webkit-transform: translate(1rem);
-            transform: translate(1rem);
+    transform: translate(1rem);
     margin: auto;
     width: 66%;
     margin-bottom: 1.5rem;
   }
   .howitwork > :nth-child(2) {
-    -webkit-transform: translate(2rem);
-            transform: translate(2rem);
+    transform: translate(2rem);
     width: 66%;
     margin: auto;
     margin-bottom: 1.5rem;
   }
   .howitwork > :nth-child(3) {
-    -webkit-transform: translate(3rem);
-            transform: translate(3rem);
+    transform: translate(3rem);
     width: 66%;
     margin: auto;
     margin-bottom: 1.5rem;
@@ -671,19 +532,11 @@ footer .mail {
     height: 19rem;
   }
   footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 @media (min-width: 900px) {
   .restaurants_pics .restaurants_pics_img {
     height: 20rem;
@@ -723,19 +576,16 @@ footer .mail {
     margin-bottom: 2rem;
   }
 }
-
 @media (min-width: 1020px) {
   .restaurants_pics .restaurants_pics_img {
     height: 22rem;
   }
 }
-
 @media (min-width: 1300px) {
   .restaurants_pics .restaurants_pics_img {
     height: 25rem;
   }
 }
-
 @media (min-width: 1600px) {
   .restaurants_pics .restaurants_pics_img {
     height: 27rem;
@@ -744,4 +594,5 @@ footer .mail {
     font-size: 1.3rem;
   }
 }
+*/
 /*# sourceMappingURL=main.css.map */
