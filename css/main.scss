@@ -153,7 +153,7 @@ header {
   }
 }
 */
-// Comment ça marche !
+/* Comment ça marche !
 h2 {
   padding-top: 0.5rem;
   padding-left: 1rem;
@@ -204,7 +204,7 @@ h2 {
     font-weight: bold;
   }
 }
-
+*/
 // Retaurants !
 .restaurants {
   background-color: #f6f6f6;
@@ -311,8 +311,9 @@ h2 {
 }
 /*Footer*/
 @include footer;
-// RESPONSIVE MOBILE !
-@media (max-width: 350px) {
+
+/* RESPONSIVE MOBILE !
+@media (max-width: 0px) {
   .text1 {
     font-size: 1.4rem;
   }
