@@ -81,7 +81,6 @@ header {
     font-size: 1.7rem;
     font-weight: bolder;
     margin-bottom: 0.7rem;
-    box-shadow
   }
   .localisation {
     display: flex;
@@ -133,18 +132,28 @@ header {
     background-color: #f6f6f6;
     margin: 1rem 1rem 1rem 1rem;
     padding: 1rem 0rem 1rem 0rem;
-    span.numbers {
-      background-color: violet;
-      justify-content: center;
-      border-radius: 50px;
-      margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-      padding: 0.5rem;
-      transform: translateX(-1rem);
+    transition: all 333ms;
+    &:hover {
+      background-color: #fcf3ff;
+      .fa-mobile-alt,
+      .fa-list-ul,
+      .fa-store {
+        color: #9356dc;
+        transform: scale(1.05);
+      }
     }
-    .fa,
+    span.numbers {
+      display: block;
+      background-color: #9356dc;
+      border-radius: 500px;
+      height: 0.6rem;
+      padding: 0.5rem;
+      color: white;
+      transform: translate(-0.5rem, 1rem);
+    }
     .fas {
-      font-size: 1.4rem;
-      margin-top: 1rem;
+      font-size: 1.3rem;
+      margin: 1rem;
     }
     h6 {
       font-size: 1.1rem;
@@ -162,6 +171,14 @@ main {
   }
   .restaurant_item {
     padding: 0rem 1rem 1rem 1rem;
+    &:hover {
+      i.fas {
+        animation: heart_animation 250ms ease-in-out forwards;
+      }
+      i.far {
+        opacity: 0;
+      }
+    }
     .conteneur_photo {
       .photo_restaurant {
         position: relative;
@@ -195,6 +212,7 @@ main {
       }
       h5 {
         margin: 0rem 0rem 1rem 1rem;
+        color: #6c6c6c;
       }
     }
   }
@@ -206,7 +224,7 @@ footer {
   background-color: #353535;
   ul {
     padding-left: 1rem;
-    color: white;
+    color: rgb(226, 226, 226);
   }
   h5 {
     font-family: Shrikhand, "Times New Roman", Times, serif;
