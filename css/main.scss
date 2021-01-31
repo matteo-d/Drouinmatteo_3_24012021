@@ -56,6 +56,7 @@
   }
 } */
 @import "variables.scss";
+@import "animations.scss";
 
 body {
   font-family: Roboto, "Times New Roman", Times, serif;
@@ -65,7 +66,6 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
   outline: none;
 }
 li {
@@ -119,6 +119,9 @@ header {
       color: #f6f6f6;
       &:hover {
         @include hoverButtonStyle;
+      }
+      a {
+        color: white;
       }
     }
   }
@@ -198,7 +201,7 @@ main {
     &:hover {
       cursor: pointer;
       i.fas {
-        animation: heart_animation 250ms ease-in-out forwards;
+        animation: heart_animation 400ms ease-in-out forwards;
       }
       i.far {
         opacity: 0;
@@ -241,6 +244,7 @@ main {
         margin: 1rem 0rem 0rem 1rem;
         font-weight: bolder;
         font-size: 1.1rem;
+        color: black;
       }
       h5 {
         margin: 0rem 0rem 1rem 1rem;
@@ -256,42 +260,10 @@ main {
 }
 
 // Footer
+@include footer;
 
-footer {
-  background-color: #353535;
-  ul {
-    padding-left: 1rem;
-    color: rgb(248, 247, 247);
-    margin: 0;
-    padding-bottom: 2rem;
-    li {
-      padding-bottom: 0.4rem;
-      .fas {
-        padding-right: 0.4rem;
-        font-size: 0.8rem;
-      }
-    }
-  }
-  h5 {
-    font-family: Shrikhand, "Times New Roman", Times, serif;
-    font-size: 1.1rem;
-    font-weight: bolder;
-    padding-top: 1rem;
-    margin-bottom: 0.5rem;
-    margin-top: 0rem;
-  }
-}
 /*HEART ANIMATION*/
-@keyframes heart_animation {
-  from {
-    opacity: 0;
-    transform: scale(0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1.5, 1.5);
-  }
-}
+@include anim_coeur;
 
 @media (min-width: 520px) and (max-width: 900px) {
   header {
