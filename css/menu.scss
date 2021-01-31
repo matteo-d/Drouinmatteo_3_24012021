@@ -6,32 +6,194 @@ body {
   font-family: Roboto, "Times New Roman", Times, serif;
   margin: 0;
   padding: 0;
-  a:active,
-  a:focus {
-    outline: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/*HEART ANIMATION*/
+@keyframes heart_animation {
+  from {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.5, 1.5);
   }
 }
 
-// HEADER !
-header {
+// NAV !
+nav {
   display: flex;
-  padding-bottom: 0.5rem;
-  padding-top: 1rem;
-  .logo {
-    width: 12rem;
-    margin: auto;
-    padding-right: 2rem;
+  align-items: center;
+  h1 {
+    font-family: Shrikhand, "Times New Roman", Times, serif;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    padding-left: 4rem;
+    margin-bottom: 0.5rem;
   }
   .fa-arrow-left {
-    font-size: 1rem;
-    margin-left: 1rem;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    padding-top: 1rem;
     text-decoration: none;
     &:hover {
       transform: scale(1.2);
     }
   }
 }
-// EN TETE !
+// HEADER
+header {
+  display: flex;
+  flex-direction: column;
+  i.far {
+    opacity: 1;
+    font-size: 1.4rem;
+  }
+  i.fas {
+    opacity: 0;
+    color: #f55eca;
+  }
+  &:hover {
+    cursor: pointer;
+    i.fas {
+      animation: heart_animation 250ms ease-in-out forwards;
+    }
+    i.far {
+      opacity: 0;
+    }
+  }
+  img.restaurantpicture {
+    height: 15rem;
+  }
+  .sous-partie_header {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    z-index: 3;
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #f6f6f6;
+
+    h2 {
+      flex: 11rem;
+      font-family: Shrikhand, "Times New Roman", Times, serif;
+      font-size: 1.7rem;
+      font-weight: bolder;
+      color: black;
+    }
+    span.fa-stack {
+      flex: 2;
+    }
+  }
+}
+main {
+  background-color: #f6f6f6;
+  h3 {
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+    margin-top: 0rem;
+    color: #7d7d7d;
+    span.underline {
+      border-bottom-style: solid;
+      border-bottom-width: 3px;
+      border-bottom-color: #99e2d0;
+    }
+  }
+  .menu_item {
+    display: flex;
+    border-radius: 17px;
+    background-color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 2px 6px 2px #f0ecec;
+    &:hover {
+      .main_container_animation {
+        animation: animation_background 0.5s ease-in-out both;
+
+        .fa-check-circle {
+          animation: circle_spinning 0.3s cubic-bezier(0.34, 0.48, 0.92, 0.66)
+            both;
+        }
+      }
+    }
+
+    .main_container_unanimated {
+      flex: 5;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    h4 {
+      font-weight: bolder;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-bottom: 0;
+      margin-left: 1rem;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+    h5 {
+      font-size: 1rem;
+      margin-top: 0.2rem;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      color: #7e7e7e;
+    }
+
+    .main_container_price {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+    span.price {
+      margin-bottom: 0rem;
+      padding-top: 0.5rem;
+      font-weight: bolder;
+    }
+    .main_container_animation {
+      width: 0rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #99e2d0;
+      border-top-right-radius: 17px;
+      border-bottom-right-radius: 17px;
+      opacity: 0;
+      animation: animation_background_reverse 0.3s linear both;
+    }
+    .fa-check-circle {
+      font-size: 2rem;
+      color: white;
+    }
+  }
+  button {
+    @include btn-style;
+    justify-self: center;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #f6f6f6;
+    &:hover {
+      @include hoverButtonStyle;
+    }
+  }
+}
+// MAIN
+
+/* EN TETE !
 img.restaurantpicture {
   height: 20rem;
   max-width: 100%;
@@ -257,20 +419,7 @@ p.price {
     opacity: 1;
   }
 }
-@keyframes bouncyHeart {
-  0% {
-    transform: rotate(33deg);
-    transform: translateY(12px);
-  }
-  50% {
-    transform: translateX(25px);
-    transform: rotate(33deg);
-  }
-  100% {
-    transform: translateX(-25px);
-    transform: rotateX(33deg);
-  }
-}
+
 @keyframes animation_background_reverse {
   0% {
     width: 5rem;
@@ -284,7 +433,7 @@ p.price {
 
 @keyframes circle_spinning {
   0% {
-    transform: rotate(15deg);
+    transform: rotate(0deg);
   }
   10% {
     transform: rotate(36deg);
@@ -342,9 +491,33 @@ div.container_button {
 }
 
 /*Footer*/
-@include footer;
+footer {
+  background-color: #353535;
+  ul {
+    padding-left: 1rem;
+    color: rgb(248, 247, 247);
+    margin: 0;
+    padding-bottom: 2rem;
+    li {
+      padding-bottom: 0.4rem;
+      list-style: none;
+      .fas {
+        padding-right: 0.4rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+  h6 {
+    font-family: Shrikhand, "Times New Roman", Times, serif;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    padding-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0rem;
+  }
+}
 
-/*KEYFRAMES*/
+/*KEYFRAMES
 @media (max-width: 350px) {
   img.logo {
     width: 8rem;
@@ -358,17 +531,53 @@ div.container_button {
   h4 {
     font-size: 0.8rem;
   }
-  @keyframes animation_background {
-    0% {
-      width: 0rem;
-      opacity: 0;
-    }
-    100% {
-      width: 4rem;
-      opacity: 1;
-    }
+  */
+@keyframes animation_background {
+  0% {
+    width: 0rem;
+    opacity: 0;
   }
-
+  100% {
+    width: 4rem;
+    opacity: 1;
+  }
+}
+@keyframes circle_spinning {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(289deg);
+  }
+  90% {
+    transform: rotate(324deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+/*
   footer h6 {
     font-size: 0.8rem;
     font-weight: bolder;
@@ -472,3 +681,4 @@ div.container_button {
     margin: 0rem 16rem 0rem 16rem;
   }
 }
+*/
