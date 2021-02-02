@@ -1,5 +1,5 @@
 @import "variables.scss";
-
+@import "animations.scss";
 body {
   display: flex;
   flex-direction: column;
@@ -25,14 +25,13 @@ a {
 
 // NAV !
 nav {
-  display: flex;
-  align-items: center;
+  @include flexAndAlign;
   h1 {
     font-family: Shrikhand, "Times New Roman", Times, serif;
     font-size: 1.7rem;
     font-weight: bolder;
     padding-left: 4rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
   }
   .fa-arrow-left {
     font-size: 1.2rem;
@@ -92,7 +91,6 @@ header {
 }
 main {
   background-color: #f6f6f6;
-  transform: translateY(2rem);
   h3 {
     font-size: 1.2rem;
     padding-left: 1.5rem;
@@ -121,7 +119,7 @@ main {
         animation: animation_background 0.5s ease-in-out both;
 
         .fa-check-circle {
-          animation: circle_spinning 0.3s cubic-bezier(0.34, 0.48, 0.92, 0.66)
+          animation: circle_spinning 0.4s ease-in-out
             both;
         }
       }
@@ -173,7 +171,7 @@ main {
       border-top-right-radius: 17px;
       border-bottom-right-radius: 17px;
       opacity: 0;
-      animation: animation_background_reverse 0.3s linear both;
+      animation: animation_background_reverse 0.4s ease-in-out both;
     }
     .fa-check-circle {
       font-size: 2rem;
@@ -539,6 +537,7 @@ footer {
   */
 @include anim_green_translate;
 @include anim_check;
+@include anim_green_translate_reverse;
 /*
   footer h6 {
     font-size: 0.8rem;

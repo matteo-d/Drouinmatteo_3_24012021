@@ -9,11 +9,16 @@
   flex-direction: column;
   align-items: center;
 }
+@mixin flexJustifyAlign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @mixin flexAndJustify {
   display: flex;
   justify-content: center;
 }
-@mixin flexandalign {
+@mixin flexAndAlign {
   display: flex;
   align-items: center;
 }
@@ -32,7 +37,6 @@
   border-style: none;
   opacity: 0.9;
 }
-
 
 @mixin footer {
   footer {
@@ -60,4 +64,3 @@
     }
   }
 }
-

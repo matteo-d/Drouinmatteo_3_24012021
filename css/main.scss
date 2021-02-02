@@ -83,8 +83,7 @@ header {
     margin-bottom: 0.7rem;
   }
   .localisation {
-    display: flex;
-    justify-content: center;
+    @include flexAndJustify;
     width: 100%;
     padding: 1rem 0rem 1rem 0rem;
     background-color: #eaeaea;
@@ -164,9 +163,7 @@ header {
       width: 0.7rem;
       padding: 0.5rem;
       color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexJustifyAlign;
       transform: translate(-1.3rem, 1rem);
     }
     .fas {
