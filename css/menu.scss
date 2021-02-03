@@ -63,13 +63,14 @@ header {
     height: 15rem;
   }
   .sous-partie_header {
+    margin-top: -2rem;
     display: flex;
     align-items: center;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     z-index: 3;
     background-color: white;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     background-color: #f6f6f6;
 
     h2 {
