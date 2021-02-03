@@ -84,31 +84,31 @@ header {
 }
 main {
   background-color: #f6f6f6;
-  :nth-child(2) {
+  section:nth-of-type(1) {
     animation: progressive_appearence 0.3s ease-out both 0.3s;
   }
-  :nth-child(3) {
+  section:nth-of-type(2) {
     animation: progressive_appearence 0.3s ease-out both 0.5s;
   }
-  :nth-child(4) {
+  section:nth-of-type(3) {
     animation: progressive_appearence 0.3s ease-out both 0.7s;
   }
-  :nth-child(6) {
+  section:nth-of-type(4) {
     animation: progressive_appearence 0.3s ease-out both 0.9s;
   }
-  :nth-child(7) {
+  section:nth-of-type(5) {
     animation: progressive_appearence 0.3s ease-out both 1.1s;
   }
-  :nth-child(8) {
+  section:nth-of-type(6) {
     animation: progressive_appearence 0.3s ease-out both 1.3s;
   }
-  :nth-child(10) {
+  section:nth-of-type(7) {
     animation: progressive_appearence 0.3s ease-out both 1.4s;
   }
-  :nth-child(11) {
+  section:nth-of-type(8) {
     animation: progressive_appearence 0.3s ease-out both 1.6s;
   }
-  :nth-child(12) {
+  section:nth-of-type(9) {
     animation: progressive_appearence 0.3s ease-out both 1.7s;
   }
   h3 {
