@@ -43,24 +43,21 @@ header {
   display: flex;
   flex-direction: column;
   i.far {
-    opacity: 1;
     font-size: 1.4rem;
   }
   i.fas {
-    opacity: 0;
+    font-size: 0rem;
     color: #f55eca;
   }
   &:hover {
     cursor: pointer;
     i.fas {
-      animation: heart_animation 350ms ease-in-out forwards;
-    }
-    i.far {
-      opacity: 0;
+      animation: heart_animation 300ms ease-in-out forwards;
     }
   }
   img.restaurantpicture {
     height: 15rem;
+    object-fit: cover;
   }
   .sous-partie_header {
     margin-top: -2rem;

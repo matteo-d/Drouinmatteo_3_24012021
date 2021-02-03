@@ -57,6 +57,7 @@
 } */
 @import "variables.scss";
 @import "animations.scss";
+@include loading_spinner;
 
 body {
   font-family: Roboto, "Times New Roman", Times, serif;
@@ -96,15 +97,13 @@ header {
   article {
     background-color: #f6f6f6;
     padding-bottom: 3rem;
+    text-align: center;
     @include flexColumnCenter;
     h3 {
+      text-align: center;
       font-size: 1.5rem;
       padding: 0rem 3rem 0rem 3rem;
       margin-bottom: 0rem;
-      .inside_h3 {
-        color: red;
-        margin: auto;
-      }
     }
     .text_article {
       padding: 0rem 3rem 1rem 3rem;
@@ -188,20 +187,16 @@ main {
   .restaurant_item {
     padding: 0rem 1rem 1rem 1rem;
     i.far {
-      opacity: 1;
       font-size: 1.4rem;
     }
     i.fas {
-      opacity: 0;
+      font-size: 0rem;
       color: #f55eca;
     }
-    &:active {
+    &:hover {
       cursor: pointer;
       i.fas {
-        animation: heart_animation 400ms ease-in-out forwards;
-      }
-      i.far {
-        opacity: 0;
+        animation: heart_animation 300ms ease-in-out forwards;
       }
     }
     .conteneur_photo {
@@ -213,6 +208,7 @@ main {
         border-top-left-radius: 13px;
         margin: 0rem;
         padding: 0rem;
+        object-fit: cover;
       }
       .nouveaute {
         position: absolute;
