@@ -160,10 +160,10 @@ header {
       border-radius: 90%;
       height: 0.7rem;
       width: 0.7rem;
-      padding: 0.5rem;
+      padding: 0.4rem 0.6rem 0.8rem 0.6rem;
       color: white;
       @include flexJustifyAlign;
-      transform: translate(-1.3rem, 1rem);
+      transform: translate(-1.4rem, 0.8rem);
     }
     .fas {
       font-size: 1.3rem;
