@@ -195,7 +195,7 @@ main {
       opacity: 0;
       color: #f55eca;
     }
-    &:hover {
+    &:active {
       cursor: pointer;
       i.fas {
         animation: heart_animation 400ms ease-in-out forwards;

@@ -1,5 +1,11 @@
 @import "variables.scss";
 @import "animations.scss";
+
+@include anim_green_translate;
+@include anim_check;
+@include anim_coeur;
+@include anim_green_translate_reverse;
+@include progressive_appearence;
 body {
   display: flex;
   flex-direction: column;
@@ -10,17 +16,6 @@ body {
 a {
   text-decoration: none;
   color: black;
-}
-/*HEART ANIMATION*/
-@keyframes heart_animation {
-  from {
-    opacity: 0;
-    transform: scale(0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1.5, 1.5);
-  }
 }
 
 // NAV !
@@ -38,7 +33,7 @@ nav {
     margin-left: 2rem;
     padding-top: 1rem;
     text-decoration: none;
-    &:hover {
+    &:active {
       transform: scale(1.2);
     }
   }
@@ -91,6 +86,33 @@ header {
 }
 main {
   background-color: #f6f6f6;
+  :nth-child(2) {
+    animation: progressive_appearence 0.3s ease-out both 0.3s;
+  }
+  :nth-child(3) {
+    animation: progressive_appearence 0.3s ease-out both 0.5s;
+  }
+  :nth-child(4) {
+    animation: progressive_appearence 0.3s ease-out both 0.7s;
+  }
+  :nth-child(6) {
+    animation: progressive_appearence 0.3s ease-out both 0.9s;
+  }
+  :nth-child(7) {
+    animation: progressive_appearence 0.3s ease-out both 1.1s;
+  }
+  :nth-child(8) {
+    animation: progressive_appearence 0.3s ease-out both 1.3s;
+  }
+  :nth-child(10) {
+    animation: progressive_appearence 0.3s ease-out both 1.4s;
+  }
+  :nth-child(11) {
+    animation: progressive_appearence 0.3s ease-out both 1.6s;
+  }
+  :nth-child(12) {
+    animation: progressive_appearence 0.3s ease-out both 1.7s;
+  }
   h3 {
     font-size: 1.2rem;
     padding-left: 1.5rem;
@@ -119,8 +141,7 @@ main {
         animation: animation_background 0.5s ease-in-out both;
 
         .fa-check-circle {
-          animation: circle_spinning 0.4s ease-in-out
-            both;
+          animation: circle_spinning 0.4s ease-in-out both;
         }
       }
     }
@@ -189,7 +210,7 @@ main {
 
     font-size: 1rem;
     color: #f6f6f6;
-    &:hover {
+    &:active {
       @include hoverButtonStyle;
     }
   }
@@ -535,9 +556,6 @@ footer {
     font-size: 0.8rem;
   }
   */
-@include anim_green_translate;
-@include anim_check;
-@include anim_green_translate_reverse;
 /*
   footer h6 {
     font-size: 0.8rem;

@@ -30,6 +30,7 @@
   border-style: none;
   font-weight: bold;
   transition: all 200ms;
+  cursor: pointer;
 }
 @mixin hoverButtonStyle {
   transform: scale(1.01);
