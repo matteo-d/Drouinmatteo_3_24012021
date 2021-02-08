@@ -279,6 +279,7 @@ main {
       justify-content: center;
       .restaurant_item {
         width: 45%;
+        padding-bottom: 2rem;
         .conteneur_photo img {
           height: 12rem;
         }
@@ -290,12 +291,32 @@ main {
   h2 {
     font-size: 2rem;
   }
+  @keyframes loadingSpinner {
+    0% {
+      letter-spacing: 0.3rem;
+    }
+    50% {
+      color: #ff79da;
+    }
+    90% {
+      letter-spacing: 1.2rem;
+      opacity: 1;
+    }
+    100% {
+      z-index: -3;
+      opacity: 0;
+    }
+  }
+  .text1 {
+    font-size: 3rem;
+  }
 }
 @media screen and (min-width: 930px) {
   .fonctionnement {
     .items_container {
       display: flex;
       justify-content: space-evenly;
+
       h6 {
         font-size: 1rem;
         margin-right: 1rem;
@@ -340,9 +361,36 @@ main {
     }
   }
 }
+@media screen and (min-width: 1030px) {
+  @keyframes loadingSpinner {
+    0% {
+      letter-spacing: 0.4rem;
+    }
+    50% {
+      color: #ff79da;
+    }
+    90% {
+      letter-spacing: 1.3rem;
+      opacity: 1;
+    }
+    100% {
+      z-index: -3;
+      opacity: 0;
+    }
+  }
+  .text1 {
+    font-size: 3rem;
+  }
+}
 
 @media screen and (min-width: 1110px) {
   main .restaurant_item_container .restaurant_item .conteneur_photo img {
     height: 16rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  main .restaurant_item_container .restaurant_item .conteneur_photo img {
+    height: 22rem;
   }
 }
