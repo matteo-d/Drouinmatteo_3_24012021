@@ -128,17 +128,9 @@ nav {
   text-align: center;
 }
 
-nav h1 {
-  font-family: Shrikhand, "Times New Roman", Times, serif;
-  font-size: 1.7rem;
-  font-weight: bolder;
-  margin-bottom: 0.7rem;
-  margin: auto;
-}
-
 nav .fa-arrow-left {
   font-size: 1.2rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
   -ms-grid-column-align: start;
       justify-self: start;
   text-decoration: none;
@@ -147,6 +139,15 @@ nav .fa-arrow-left {
 nav .fa-arrow-left:active {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+nav h1 {
+  font-family: Shrikhand, "Times New Roman", Times, serif;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  margin-bottom: 0.7rem;
+  margin-left: -1rem;
+  margin: auto;
 }
 
 header {
@@ -198,6 +199,10 @@ header .sous-partie_header {
   background-color: #f6f6f6;
 }
 
+header .sous-partie_header div.fa-stack {
+  justify-self: flex-end;
+}
+
 header .sous-partie_header h2 {
   font-family: Shrikhand, "Times New Roman", Times, serif;
   font-size: 1.7rem;
@@ -205,60 +210,51 @@ header .sous-partie_header h2 {
   color: black;
 }
 
-header .sous-partie_header div.fa-stack {
-  justify-self: flex-end;
-}
-
 main {
   background-color: #f6f6f6;
 }
 
-main section:nth-of-type(1) {
+main .entree_container section:nth-of-type(1) {
   -webkit-animation: progressive_appearence 0.3s ease-out both 0.3s;
           animation: progressive_appearence 0.3s ease-out both 0.3s;
 }
 
-main section:nth-of-type(2) {
+main .entree_container section:nth-of-type(2) {
   -webkit-animation: progressive_appearence 0.3s ease-out both 0.5s;
           animation: progressive_appearence 0.3s ease-out both 0.5s;
 }
 
-main section:nth-of-type(3) {
+main .entree_container section:nth-of-type(3) {
   -webkit-animation: progressive_appearence 0.3s ease-out both 0.7s;
           animation: progressive_appearence 0.3s ease-out both 0.7s;
 }
 
-main section:nth-of-type(4) {
+main .plat_container section:nth-of-type(1) {
   -webkit-animation: progressive_appearence 0.3s ease-out both 0.9s;
           animation: progressive_appearence 0.3s ease-out both 0.9s;
 }
 
-main section:nth-of-type(5) {
+main .plat_container section:nth-of-type(2) {
   -webkit-animation: progressive_appearence 0.3s ease-out both 1.1s;
           animation: progressive_appearence 0.3s ease-out both 1.1s;
 }
 
-main section:nth-of-type(6) {
+main .plat_container section:nth-of-type(3) {
   -webkit-animation: progressive_appearence 0.3s ease-out both 1.3s;
           animation: progressive_appearence 0.3s ease-out both 1.3s;
 }
 
-main section:nth-of-type(7) {
-  -webkit-animation: progressive_appearence 0.3s ease-out both 1.4s;
-          animation: progressive_appearence 0.3s ease-out both 1.4s;
+main .dessert_container section:nth-of-type(1) {
+  -webkit-animation: progressive_appearence 0.3s ease-out both 1.5s;
+          animation: progressive_appearence 0.3s ease-out both 1.5s;
 }
 
-main section:nth-of-type(8) {
-  -webkit-animation: progressive_appearence 0.3s ease-out both 1.6s;
-          animation: progressive_appearence 0.3s ease-out both 1.6s;
-}
-
-main section:nth-of-type(9) {
+main .dessert_container section:nth-of-type(2) {
   -webkit-animation: progressive_appearence 0.3s ease-out both 1.7s;
           animation: progressive_appearence 0.3s ease-out both 1.7s;
 }
 
-main section:nth-of-type(10) {
+main .dessert_container section:nth-of-type(3) {
   -webkit-animation: progressive_appearence 0.3s ease-out both 1.9s;
           animation: progressive_appearence 0.3s ease-out both 1.9s;
 }
@@ -406,13 +402,22 @@ main button {
   color: #f6f6f6;
 }
 
-main button:active {
+main button:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
   -webkit-box-shadow: 3px 3px 3px #7e7e7e;
           box-shadow: 3px 3px 3px #7e7e7e;
   border-style: none;
   opacity: 0.9;
+}
+
+@media screen and (max-width: 330px) {
+  main .menu_item h4 {
+    font-size: 1rem;
+  }
+  main .menu_item h5 {
+    font-size: 0.9rem;
+  }
 }
 
 footer {
@@ -428,7 +433,6 @@ footer ul {
 
 footer ul li {
   padding-bottom: 0.4rem;
-  list-style: none;
 }
 
 footer ul li .fas {
@@ -436,7 +440,7 @@ footer ul li .fas {
   font-size: 0.8rem;
 }
 
-footer h6 {
+footer h5 {
   font-family: Shrikhand, "Times New Roman", Times, serif;
   font-size: 1.1rem;
   font-weight: bolder;
@@ -445,10 +449,25 @@ footer h6 {
   margin-top: 0rem;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 420px) {
   nav h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
+}
+
+@media screen and (min-width: 500px) {
+  nav h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  nav h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
   header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -459,7 +478,27 @@ footer h6 {
             flex-direction: column;
   }
   header img.restaurantpicture {
-    height: 85vh;
+    height: 40vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  nav h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header img.restaurantpicture {
+    height: 45vh;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -491,11 +530,11 @@ footer h6 {
     padding-top: 2rem;
   }
   main .menu_item h4 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 0.7rem 0rem 0rem 0.7rem;
   }
   main .menu_item h5 {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     margin: 0rem 0rem 0.7rem 0.7rem;
   }
   main h3 {
@@ -511,27 +550,53 @@ footer h6 {
   main .dessert_container {
     width: 33%;
   }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 0;
+  }
+  footer ul li {
+    display: inline;
+    margin-right: 1rem;
+  }
 }
 
-footer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 0;
+@media screen and (min-width: 850px) {
+  nav h1 {
+    font-size: 2.9rem;
+  }
+  .menu_item h4 {
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+  .menu_item h5 {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+  }
 }
 
-footer ul li {
-  display: inline;
-  margin-right: 1rem;
+@media screen and (min-width: 950px) {
+  main {
+    padding-bottom: 3rem;
+  }
+  main .menu_item h4 {
+    font-size: 1rem;
+    margin: 0.7rem 0rem 0rem 0.7rem;
+  }
+  main .menu_item h5 {
+    font-size: 0.9rem;
+    margin: 0rem 0rem 0.7rem 0.7rem;
+  }
 }
 
-@media screen and (min-width: 1130px) {
+@media screen and (min-width: 1020px) {
   header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -542,10 +607,16 @@ footer ul li {
             flex-direction: column;
   }
   header img.restaurantpicture {
-    height: 85vh;
+    height: 75vh;
     -o-object-fit: cover;
        object-fit: cover;
   }
+  header .sous-partie_header h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1130px) {
   main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -561,6 +632,63 @@ footer ul li {
   main h3 {
     text-align: center;
     padding: 0;
+  }
+  main header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main header img.restaurantpicture {
+    height: 75vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main header .sous-partie_header h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header img.restaurantpicture {
+    height: 80vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header .sous-partie_header h2 {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header img.restaurantpicture {
+    height: 85vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header .sous-partie_header h2 {
+    font-size: 2.6rem;
   }
 }
 /*# sourceMappingURL=menu.css.map */

@@ -24,22 +24,22 @@ nav {
   display: flex;
   align-items: center;
   text-align: center;
-
-  h1 {
-    font-family: Shrikhand, "Times New Roman", Times, serif;
-    font-size: 1.7rem;
-    font-weight: bolder;
-    margin-bottom: 0.7rem;
-    margin: auto;
-  }
   .fa-arrow-left {
     font-size: 1.2rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     justify-self: start;
     text-decoration: none;
     &:active {
       transform: scale(1.2);
     }
+  }
+  h1 {
+    font-family: Shrikhand, "Times New Roman", Times, serif;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-bottom: 0.7rem;
+    margin-left: -1rem;
+    margin: auto;
   }
 }
 // HEADER
@@ -72,15 +72,15 @@ header {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     background-color: #f6f6f6;
+    div.fa-stack {
+      justify-self: flex-end;
+    }
 
     h2 {
       font-family: Shrikhand, "Times New Roman", Times, serif;
       font-size: 1.7rem;
       font-weight: bolder;
       color: black;
-    }
-    div.fa-stack {
-      justify-self: flex-end;
     }
   }
 }
@@ -293,11 +293,11 @@ main {
     padding-bottom: 2rem;
     padding-top: 2rem;
     .menu_item h4 {
-      font-size: 1rem;
+      font-size: 0.8rem;
       margin: 0.7rem 0rem 0rem 0.7rem;
     }
     .menu_item h5 {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       margin: 0rem 0rem 0.7rem 0.7rem;
     }
     h3 {
@@ -346,8 +346,28 @@ main {
 }
 @media screen and (min-width: 950px) {
   main {
-    padding-top: 1rem;
     padding-bottom: 3rem;
+    .menu_item h4 {
+      font-size: 1rem;
+      margin: 0.7rem 0rem 0rem 0.7rem;
+    }
+    .menu_item h5 {
+      font-size: 0.9rem;
+      margin: 0rem 0rem 0.7rem 0.7rem;
+    }
+  }
+}
+@media screen and (min-width: 1020px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    img.restaurantpicture {
+      height: 75vh;
+      object-fit: cover;
+    }
+    .sous-partie_header h2 {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -362,6 +382,30 @@ main {
       text-align: center;
       padding: 0;
     }
+    header {
+      display: flex;
+      flex-direction: column;
+      img.restaurantpicture {
+        height: 75vh;
+        object-fit: cover;
+      }
+      .sous-partie_header h2 {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1220px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    img.restaurantpicture {
+      height: 80vh;
+      object-fit: cover;
+    }
+    .sous-partie_header h2 {
+      font-size: 2.3rem;
+    }
   }
 }
 @media screen and (min-width: 1400px) {
@@ -371,6 +415,9 @@ main {
     img.restaurantpicture {
       height: 85vh;
       object-fit: cover;
+    }
+    .sous-partie_header h2 {
+      font-size: 2.6rem;
     }
   }
 }

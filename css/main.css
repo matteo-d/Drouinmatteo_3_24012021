@@ -175,7 +175,7 @@ header article .text_article {
   padding: 0rem 3rem 1rem 3rem;
 }
 
-header article span {
+header article span.button_visit {
   background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   color: #fdfafe;
@@ -192,7 +192,7 @@ header article span {
   color: #f6f6f6;
 }
 
-header article span:hover {
+header article span.button_visit:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
   -webkit-box-shadow: 3px 3px 3px #7e7e7e;
@@ -201,7 +201,7 @@ header article span:hover {
   opacity: 0.9;
 }
 
-header article span a {
+header article span.button_visit a {
   color: white;
 }
 
@@ -418,6 +418,10 @@ footer h5 {
 }
 
 @media screen and (min-width: 500px) {
+  .fonctionnement .fonctionnement_item h6 {
+    margin-left: 2rem;
+    font-size: 1.1rem;
+  }
   main .restaurant_item .conteneur_photo .photo_restaurant {
     height: 15rem;
   }
@@ -493,6 +497,7 @@ footer h5 {
   }
   main .restaurant_item_container .restaurant_item {
     width: 45%;
+    padding-bottom: 2rem;
   }
   main .restaurant_item_container .restaurant_item .conteneur_photo img {
     height: 12rem;
@@ -502,6 +507,41 @@ footer h5 {
 @media screen and (min-width: 890px) {
   h2 {
     font-size: 2rem;
+  }
+  @-webkit-keyframes loadingSpinner {
+    0% {
+      letter-spacing: 0.3rem;
+    }
+    50% {
+      color: #ff79da;
+    }
+    90% {
+      letter-spacing: 1.2rem;
+      opacity: 1;
+    }
+    100% {
+      z-index: -3;
+      opacity: 0;
+    }
+  }
+  @keyframes loadingSpinner {
+    0% {
+      letter-spacing: 0.3rem;
+    }
+    50% {
+      color: #ff79da;
+    }
+    90% {
+      letter-spacing: 1.2rem;
+      opacity: 1;
+    }
+    100% {
+      z-index: -3;
+      opacity: 0;
+    }
+  }
+  .text1 {
+    font-size: 3rem;
   }
 }
 
@@ -557,9 +597,53 @@ footer h5 {
   }
 }
 
+@media screen and (min-width: 1030px) {
+  @-webkit-keyframes loadingSpinner {
+    0% {
+      letter-spacing: 0.4rem;
+    }
+    50% {
+      color: #ff79da;
+    }
+    90% {
+      letter-spacing: 1.3rem;
+      opacity: 1;
+    }
+    100% {
+      z-index: -3;
+      opacity: 0;
+    }
+  }
+  @keyframes loadingSpinner {
+    0% {
+      letter-spacing: 0.4rem;
+    }
+    50% {
+      color: #ff79da;
+    }
+    90% {
+      letter-spacing: 1.3rem;
+      opacity: 1;
+    }
+    100% {
+      z-index: -3;
+      opacity: 0;
+    }
+  }
+  .text1 {
+    font-size: 3rem;
+  }
+}
+
 @media screen and (min-width: 1110px) {
   main .restaurant_item_container .restaurant_item .conteneur_photo img {
     height: 16rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  main .restaurant_item_container .restaurant_item .conteneur_photo img {
+    height: 20rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
