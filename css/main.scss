@@ -251,15 +251,10 @@ main {
 }
 
 @media screen and (min-width: 766px) {
-  header {
-    h1 {
-      font-size: 2.9rem;
-    }
+  h2 {
+    text-align: center;
   }
   .fonctionnement {
-    h2 {
-      text-align: center;
-    }
     .items_container {
       display: flex;
       justify-content: space-evenly;
@@ -278,41 +273,26 @@ main {
     }
   }
   main {
-    h2 {
-      text-align: center;
-    }
     .restaurant_item_container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       .restaurant_item {
         width: 45%;
-          .conteneur_photo
-              img {
-            height: 12rem;
-          }
+        .conteneur_photo img {
+          height: 12rem;
+        }
       }
     }
   }
-  
 }
 @media screen and (min-width: 890px) {
-  header {
-    h1 {
-      font-size: 3rem;
-    }
-  }
   h2 {
     font-size: 2rem;
   }
 }
 @media screen and (min-width: 930px) {
-  header {
-    h1 {
-      font-size: 3.1rem;
-    }
-  }
-  .fonctionnement { 
+  .fonctionnement {
     .items_container {
       display: flex;
       justify-content: space-evenly;
@@ -335,41 +315,34 @@ main {
 @media screen and (min-width: 1010px) {
   header {
     h1 {
-      font-size: 3.3rem;
+      font-size: 2.9rem;
     }
   }
-main .restaurant_item_container .restaurant_item .conteneur_photo img {
+  main .restaurant_item_container .restaurant_item .conteneur_photo img {
     height: 15rem;
-}
-.fonctionnement { 
-  .items_container {
-    display: flex;
-    justify-content: space-evenly;
-    h6 {
-      font-size: 1.2rem;
-      margin-right: 2rem;
-      margin-left: 0.5rem;
-    }
-    .fa-mobile-alt,
-    .fa-list-ul,
-    .fa-store {
-      font-size: 1.2rem;
-      margin-left: 0;
-      margin-right: 1rem;
+  }
+  .fonctionnement {
+    .items_container {
+      display: flex;
+      justify-content: space-evenly;
+      h6 {
+        font-size: 1.1rem;
+        margin-right: 2rem;
+        margin-left: 0.5rem;
+      }
+      .fa-mobile-alt,
+      .fa-list-ul,
+      .fa-store {
+        font-size: 1.2rem;
+        margin-left: 0;
+        margin-right: 1rem;
+      }
     }
   }
-}
 }
 
 @media screen and (min-width: 1110px) {
- 
-main .restaurant_item_container .restaurant_item .conteneur_photo img {
-    height: 17rem;
-}
-}
-@media screen and (min-width: 1310px) {
- 
   main .restaurant_item_container .restaurant_item .conteneur_photo img {
-      height: 19rem;
+    height: 16rem;
   }
-  }
+}
