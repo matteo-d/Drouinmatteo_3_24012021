@@ -244,19 +244,89 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
+  nav {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    img.restaurantpicture {
+      height: 85vh;
+      object-fit: cover;
+    }
+    .sous-partie_header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      div.fa-stack {
+        transform: translateX(1.5rem);
+      }
+    }
+  }
+
   main {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    .menu_item h4 {
+      font-size: 1rem;
+      margin: 0.7rem 0rem 0rem 0.7rem;
+    }
+    .menu_item h5 {
+      font-size: 0.8rem;
+      margin: 0rem 0rem 0.7rem 0.7rem;
+    }
+    h3 {
+      text-align: center;
+      padding: 0;
+    }
     .entree_container {
-      width: 30%;
+      width: 33%;
     }
     .plat_container {
-      width: 30%;
+      width: 33%;
     }
     .dessert_container {
-      width: 30%;
+      width: 33%;
+    }
+  }
+}
+footer {
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    li {
+      display: inline;
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1130px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    img.restaurantpicture {
+      height: 85vh;
+      object-fit: cover;
+    }
+  }
+  main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    h3 {
+      text-align: center;
+      padding: 0;
     }
   }
 }
