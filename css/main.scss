@@ -128,7 +128,7 @@ main {
   h2 {
     padding: 1.5rem 2rem 1rem 2rem;
   }
-  
+
   .restaurant_item {
     padding: 0rem 1rem 1rem 1rem;
     i.far {
@@ -212,6 +212,10 @@ main {
   }
 }
 @media screen and (min-width: 500px) {
+  .fonctionnement .fonctionnement_item h6 {
+    margin-left: 2rem;
+    font-size: 1.1rem;
+  }
   main .restaurant_item .conteneur_photo .photo_restaurant {
     height: 15rem;
   }
@@ -392,6 +396,6 @@ main {
 
 @media screen and (min-width: 1300px) {
   main .restaurant_item_container .restaurant_item .conteneur_photo img {
-    height: 22rem;
+    height: 20rem;
   }
 }

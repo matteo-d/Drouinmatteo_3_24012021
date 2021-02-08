@@ -222,19 +222,58 @@ main {
     }
   }
 }
+@media screen and (max-width: 330px) {
+  main .menu_item h4 {
+    font-size: 1rem;
+  }
+  main .menu_item h5 {
+    font-size: 0.9rem;
+  }
+}
 @include footer;
-
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 420px) {
   nav {
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
     }
   }
+}
+@media screen and (min-width: 500px) {
+  nav {
+    h1 {
+      font-size: 2.4rem;
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  nav {
+    h1 {
+      font-size: 2.6rem;
+    }
+  }
+}
+@media screen and (min-width: 700px) {
   header {
     display: flex;
     flex-direction: column;
     img.restaurantpicture {
-      height: 85vh;
+      height: 40vh;
+      object-fit: cover;
+    }
+  }
+  nav {
+    h1 {
+      font-size: 2.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    img.restaurantpicture {
+      height: 45vh;
       object-fit: cover;
     }
     .sous-partie_header {
@@ -288,31 +327,31 @@ main {
     }
   }
 }
+@media screen and (min-width: 850px) {
+  nav {
+    h1 {
+      font-size: 2.9rem;
+    }
+  }
+  .menu_item {
+    h4 {
+      margin-top: 1rem;
+      padding-left: 1rem;
+    }
+    h5 {
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+    }
+  }
+}
 @media screen and (min-width: 950px) {
   main {
-    padding-top: 0;
+    padding-top: 1rem;
     padding-bottom: 3rem;
-    .plat_container {
-      transform: translateY(4rem);
-    }
-    .dessert_container {
-      transform: translateY(8rem);
-    }
-    .button_visit {
-      margin-top: 6rem;
-    }
   }
 }
 
 @media screen and (min-width: 1130px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    img.restaurantpicture {
-      height: 85vh;
-      object-fit: cover;
-    }
-  }
   main {
     display: flex;
     justify-content: space-evenly;
@@ -322,6 +361,16 @@ main {
     h3 {
       text-align: center;
       padding: 0;
+    }
+  }
+}
+@media screen and (min-width: 1400px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    img.restaurantpicture {
+      height: 85vh;
+      object-fit: cover;
     }
   }
 }
