@@ -339,7 +339,7 @@ main {
     }
   }
 main .restaurant_item_container .restaurant_item .conteneur_photo img {
-    height: 19rem;
+    height: 15rem;
 }
 .fonctionnement { 
   .items_container {
@@ -361,3 +361,15 @@ main .restaurant_item_container .restaurant_item .conteneur_photo img {
 }
 }
 
+@media screen and (min-width: 1110px) {
+ 
+main .restaurant_item_container .restaurant_item .conteneur_photo img {
+    height: 17rem;
+}
+}
+@media screen and (min-width: 1310px) {
+ 
+  main .restaurant_item_container .restaurant_item .conteneur_photo img {
+      height: 19rem;
+  }
+  }
