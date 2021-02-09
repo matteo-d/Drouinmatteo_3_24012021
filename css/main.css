@@ -94,6 +94,24 @@
   opacity: 1;
 }
 
+@-webkit-keyframes heart_animation {
+  0% {
+    font-size: 0rem;
+  }
+  100% {
+    font-size: 1.6rem;
+  }
+}
+
+@keyframes heart_animation {
+  0% {
+    font-size: 0rem;
+  }
+  100% {
+    font-size: 1.6rem;
+  }
+}
+
 body {
   font-family: Roboto, "Times New Roman", Times, serif;
   margin: 0;

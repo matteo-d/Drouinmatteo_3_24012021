@@ -1,6 +1,7 @@
 @import "variables.scss";
 @import "animations.scss";
 @include loading_spinner;
+@include anim_coeur;
 
 body {
   font-family: Roboto, "Times New Roman", Times, serif;
@@ -128,7 +129,7 @@ main {
   h2 {
     padding: 1.5rem 2rem 1rem 2rem;
   }
-
+  
   .restaurant_item {
     padding: 0rem 1rem 1rem 1rem;
     i.far {

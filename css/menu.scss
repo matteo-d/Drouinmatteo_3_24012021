@@ -368,6 +368,9 @@ main {
     .sous-partie_header h2 {
       font-size: 2rem;
     }
+    div.fa-stack {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -377,7 +380,7 @@ main {
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     h3 {
       text-align: center;
       padding: 0;
@@ -400,7 +403,7 @@ main {
     display: flex;
     flex-direction: column;
     img.restaurantpicture {
-      height: 80vh;
+      height: 75vh;
       object-fit: cover;
     }
     .sous-partie_header h2 {
@@ -413,7 +416,7 @@ main {
     display: flex;
     flex-direction: column;
     img.restaurantpicture {
-      height: 85vh;
+      height: 75vh;
       object-fit: cover;
     }
     .sous-partie_header h2 {
