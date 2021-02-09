@@ -1,21 +1,21 @@
 /*HEART ANIMATION*/
 @-webkit-keyframes animation_background {
   0% {
-    width: 0rem;
+    width: 0;
     opacity: 0;
   }
   100% {
-    width: 4rem;
+    width: 17%;
     opacity: 1;
   }
 }
 @keyframes animation_background {
   0% {
-    width: 0rem;
+    width: 0;
     opacity: 0;
   }
   100% {
-    width: 4rem;
+    width: 17%;
     opacity: 1;
   }
 }
@@ -62,22 +62,22 @@
 
 @-webkit-keyframes animation_background_reverse {
   0% {
-    width: 4rem;
+    width: 17%;
     opacity: 1;
   }
   100% {
-    width: 0rem;
+    width: 0;
     opacity: 0;
   }
 }
 
 @keyframes animation_background_reverse {
   0% {
-    width: 4rem;
+    width: 17%;
     opacity: 1;
   }
   100% {
-    width: 0rem;
+    width: 0;
     opacity: 0;
   }
 }
@@ -616,6 +616,20 @@ footer h5 {
   }
   header div.fa-stack {
     font-size: 2rem;
+  }
+  main button {
+    background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+    background: linear-gradient(to bottom right, #ff79da, #9356dc);
+    color: #fdfafe;
+    border-radius: 50px;
+    border-style: none;
+    font-weight: bold;
+    -webkit-transition: all 200ms;
+    transition: all 200ms;
+    cursor: pointer;
+    padding: 1.3rem 2rem 1.2rem 2rem;
+    font-size: 1.2rem;
+    color: #f6f6f6;
   }
 }
 

@@ -372,6 +372,26 @@ main {
       font-size: 2rem;
     }
   }
+  main button {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(#ff79da),
+      to(#9356dc)
+    );
+    background: linear-gradient(to bottom right, #ff79da, #9356dc);
+    color: #fdfafe;
+    border-radius: 50px;
+    border-style: none;
+    font-weight: bold;
+    -webkit-transition: all 200ms;
+    transition: all 200ms;
+    cursor: pointer;
+    padding: 1.3rem 2rem 1.2rem 2rem;
+    font-size: 1.2rem;
+    color: #f6f6f6;
+  }
 }
 
 @media screen and (min-width: 1130px) {
