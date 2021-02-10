@@ -213,6 +213,15 @@ main {
 
 // Footer
 @include footer_index; //RESPONSIVE TABLETTE
+@media screen and (max-width: 270px) {
+  .fonctionnement .fonctionnement_item .fas {
+    font-size: 0.5rem;
+  }
+  .fonctionnement .fonctionnement_item h6 {
+    font-size: 0.5rem;
+  }
+}
+
 @media screen and (max-width: 315px) {
   .fonctionnement .fonctionnement_item .fas {
     font-size: 0.9rem;
