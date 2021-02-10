@@ -118,12 +118,12 @@ body {
   padding: 0;
 }
 
-a {
+body a {
   text-decoration: none;
   outline: none;
 }
 
-li {
+body li {
   list-style: none;
 }
 
@@ -427,12 +427,96 @@ footer ul li .fas {
   font-size: 0.8rem;
 }
 
+@media screen and (max-width: 315px) {
+  .fonctionnement .fonctionnement_item .fas {
+    font-size: 0.9rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .fonctionnement .fonctionnement_item h6 {
+    font-size: 0.9rem;
+    margin-right: 0.2rem;
+  }
+  main .restaurant_item .conteneur_photo .photo_restaurant {
+    height: 10rem;
+  }
+}
+
 @media screen and (max-width: 353px) {
   .fonctionnement .fonctionnement_item .fas {
     font-size: 0.9rem;
   }
   .fonctionnement .fonctionnement_item h6 {
     font-size: 0.9rem;
+  }
+  @-webkit-keyframes loadingSpinner {
+    0% {
+      letter-spacing: 0.2rem;
+    }
+    50% {
+      color: #ff79da;
+    }
+    90% {
+      letter-spacing: 0.7rem;
+      opacity: 1;
+    }
+    100% {
+      z-index: -3;
+      opacity: 0;
+    }
+  }
+  @keyframes loadingSpinner {
+    0% {
+      letter-spacing: 0.2rem;
+    }
+    50% {
+      color: #ff79da;
+    }
+    90% {
+      letter-spacing: 0.7rem;
+      opacity: 1;
+    }
+    100% {
+      z-index: -3;
+      opacity: 0;
+    }
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    -webkit-animation: hideLoadingSpinner 0.5s ease-out 2.4s 1 forwards;
+            animation: hideLoadingSpinner 0.5s ease-out 2.4s 1 forwards;
+    opacity: 1;
+    z-index: 1;
+  }
+  .container span {
+    text-transform: uppercase;
+    display: block;
+  }
+  .text1 {
+    color: #9356dc;
+    font-family: Shrikhand, "Times New Roman", Times, serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    background: white;
+    position: relative;
+    -webkit-animation: loadingSpinner 1.7s ease-in 1 forwards;
+            animation: loadingSpinner 1.7s ease-in 1 forwards;
+    z-index: 1;
+    opacity: 1;
   }
 }
 
@@ -489,7 +573,7 @@ footer ul li .fas {
   }
 }
 
-@media screen and (min-width: 766px) {
+@media screen and (min-width: 780px) {
   h2 {
     text-align: center;
   }
