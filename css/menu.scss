@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "mixins.scss";
 @import "animations.scss";
 
 @include anim_green_translate;
@@ -10,7 +11,7 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: Roboto, "Times New Roman", Times, serif;
+  font-family: $policeTexte;
   margin: 0;
   padding: 0;
 }
@@ -34,7 +35,7 @@ nav {
     }
   }
   h1 {
-    font-family: Shrikhand, "Times New Roman", Times, serif;
+    font-family: $policeTitle;
     font-size: 1.7rem;
     font-weight: bolder;
     margin-bottom: 0.7rem;
@@ -67,7 +68,7 @@ header {
     background-color: #f6f6f6;
 
     h2 {
-      font-family: Shrikhand, "Times New Roman", Times, serif;
+      font-family: $policeTitle;
       font-size: 1.7rem;
       font-weight: bolder;
       color: black;
@@ -129,7 +130,7 @@ main {
     span.underline {
       border-bottom-style: solid;
       border-bottom-width: 3px;
-      border-bottom-color: #99e2d0;
+      border-bottom-color: $vert;
     }
   }
   .menu_item {
@@ -196,14 +197,14 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #99e2d0;
+      background-color: $vert;
       border-top-right-radius: 17px;
       border-bottom-right-radius: 17px;
       opacity: 0;
       animation: animation_background_reverse 0.4s ease-in-out both;
     }
     .fa-check-circle {
-      font-size: 2rem;
+      font-size: 1.6rem;
       color: white;
     }
   }
@@ -378,10 +379,10 @@ main {
       linear,
       left top,
       right bottom,
-      from(#ff79da),
-      to(#9356dc)
+      from($rose),
+      to($violet)
     );
-    background: linear-gradient(to bottom right, #ff79da, #9356dc);
+    background: linear-gradient(to bottom right, $rose, $violet);
     color: #fdfafe;
     border-radius: 50px;
     border-style: none;

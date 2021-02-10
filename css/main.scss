@@ -1,10 +1,11 @@
 @import "variables.scss";
+@import "mixins.scss";
 @import "animations.scss";
 @include loading_spinner;
 @include anim_coeur;
 
 body {
-  font-family: Roboto, "Times New Roman", Times, serif;
+  font-family: $policeTexte;
   margin: 0;
   padding: 0;
   a {
@@ -21,7 +22,7 @@ body {
 header {
   @include flexColumnCenter;
   h1 {
-    font-family: Shrikhand, "Times New Roman", Times, serif;
+    font-family: $policeTitle;
     font-size: 1.7rem;
     font-weight: bolder;
     margin-bottom: 0.7rem;
@@ -90,7 +91,7 @@ header {
       .fa-mobile-alt,
       .fa-list-ul,
       .fa-store {
-        color: #9356dc;
+        color: $violet;
         transform: scale(1.05);
       }
     }
@@ -100,7 +101,7 @@ header {
       color: #7e7e7e;
     }
     .numbers {
-      background-color: #9356dc;
+      background-color: $violet;
       border-radius: 90%;
       height: 0.7rem;
       width: 0.7rem;
@@ -137,6 +138,7 @@ main {
     padding: 0rem 1rem 1rem 1rem;
     i.far {
       font-size: 1.4rem;
+      border: black;
     }
     i.fas {
       font-size: 0rem;
@@ -167,7 +169,7 @@ main {
         position: absolute;
         font-weight: bold;
         color: #0c8e6f;
-        background-color: #99e2d0;
+        background-color: $vert;
         transform: translate(-7rem, 1rem);
         border-radius: 5px;
         padding: 0.5rem 1rem 0.5rem 1rem;
@@ -210,33 +212,7 @@ main {
 }
 
 // Footer
-footer {
-  background-color: #353535;
-  ul {
-    padding-left: 1rem;
-    color: rgb(248, 247, 247);
-    margin: 0;
-    padding-bottom: 2rem;
-    list-style: none;
-    li {
-      padding-bottom: 0.4rem;
-      h5 {
-        font-family: Shrikhand, "Times New Roman", Times, serif;
-        font-size: 1.1rem;
-        font-weight: bolder;
-        padding-top: 1rem;
-        margin-bottom: 0.5rem;
-        margin-top: 0rem;
-      }
-      .fas {
-        padding-right: 0.4rem;
-        font-size: 0.8rem;
-      }
-    }
-  }
-}
-
-//RESPONSIVE TABLETTE
+@include footer_index; //RESPONSIVE TABLETTE
 @media screen and (max-width: 315px) {
   .fonctionnement .fonctionnement_item .fas {
     font-size: 0.9rem;
@@ -263,7 +239,7 @@ footer {
       letter-spacing: 0.2rem;
     }
     50% {
-      color: #ff79da;
+      color: $rose;
     }
     90% {
       letter-spacing: 0.7rem;
@@ -292,8 +268,8 @@ footer {
     display: block;
   }
   .text1 {
-    color: #9356dc;
-    font-family: Shrikhand, "Times New Roman", Times, serif;
+    color: $violet;
+    font-family: $policeTitle;
     font-size: 1.5rem;
     font-weight: bolder;
     letter-spacing: 4px;
@@ -406,7 +382,7 @@ footer {
       letter-spacing: 0.3rem;
     }
     50% {
-      color: #ff79da;
+      color: $rose;
     }
     90% {
       letter-spacing: 1.2rem;
@@ -477,7 +453,7 @@ footer {
       letter-spacing: 0.4rem;
     }
     50% {
-      color: #ff79da;
+      color: $rose;
     }
     90% {
       letter-spacing: 1.3rem;
