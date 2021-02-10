@@ -406,10 +406,20 @@ footer ul {
   color: #f8f7f7;
   margin: 0;
   padding-bottom: 2rem;
+  list-style: none;
 }
 
 footer ul li {
   padding-bottom: 0.4rem;
+}
+
+footer ul li h5 {
+  font-family: Shrikhand, "Times New Roman", Times, serif;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  padding-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
 }
 
 footer ul li .fas {
@@ -417,13 +427,13 @@ footer ul li .fas {
   font-size: 0.8rem;
 }
 
-footer h5 {
-  font-family: Shrikhand, "Times New Roman", Times, serif;
-  font-size: 1.1rem;
-  font-weight: bolder;
-  padding-top: 1rem;
-  margin-bottom: 0.5rem;
-  margin-top: 0rem;
+@media screen and (max-width: 353px) {
+  .fonctionnement .fonctionnement_item .fas {
+    font-size: 0.9rem;
+  }
+  .fonctionnement .fonctionnement_item h6 {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (min-width: 420px) {

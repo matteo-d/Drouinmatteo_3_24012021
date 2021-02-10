@@ -46,13 +46,6 @@ nav {
 header {
   display: flex;
   flex-direction: column;
-  i.far {
-    font-size: 1.4rem;
-  }
-  i.fas {
-    font-size: 0rem;
-    color: #f55eca;
-  }
   &:hover {
     cursor: pointer;
     i.fas {
@@ -72,15 +65,24 @@ header {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     background-color: #f6f6f6;
-    div.fa-stack {
-      justify-self: flex-end;
-    }
 
     h2 {
       font-family: Shrikhand, "Times New Roman", Times, serif;
       font-size: 1.7rem;
       font-weight: bolder;
       color: black;
+      justify-self: flex-start;
+      
+    }
+    div.fa-stack {
+     display: flex;
+      i.far {
+        font-size: 1.4rem;
+      }
+      i.fas {
+        font-size: 0rem;
+        color: #f55eca;
+      }
     }
   }
 }

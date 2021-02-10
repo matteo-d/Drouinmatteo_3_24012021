@@ -160,15 +160,6 @@ header {
           flex-direction: column;
 }
 
-header i.far {
-  font-size: 1.4rem;
-}
-
-header i.fas {
-  font-size: 0rem;
-  color: #f55eca;
-}
-
 header:hover {
   cursor: pointer;
 }
@@ -199,15 +190,27 @@ header .sous-partie_header {
   background-color: #f6f6f6;
 }
 
-header .sous-partie_header div.fa-stack {
-  justify-self: flex-end;
-}
-
 header .sous-partie_header h2 {
   font-family: Shrikhand, "Times New Roman", Times, serif;
   font-size: 1.7rem;
   font-weight: bolder;
   color: black;
+  justify-self: flex-start;
+}
+
+header .sous-partie_header div.fa-stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .sous-partie_header div.fa-stack i.far {
+  font-size: 1.4rem;
+}
+
+header .sous-partie_header div.fa-stack i.fas {
+  font-size: 0rem;
+  color: #f55eca;
 }
 
 main {

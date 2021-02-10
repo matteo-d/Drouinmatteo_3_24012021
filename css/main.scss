@@ -129,7 +129,7 @@ main {
   h2 {
     padding: 1.5rem 2rem 1rem 2rem;
   }
-  
+
   .restaurant_item {
     padding: 0rem 1rem 1rem 1rem;
     i.far {
@@ -199,9 +199,41 @@ main {
 }
 
 // Footer
-@include footer;
+footer {
+  background-color: #353535;
+  ul {
+    padding-left: 1rem;
+    color: rgb(248, 247, 247);
+    margin: 0;
+    padding-bottom: 2rem;
+    list-style: none;
+    li {
+      padding-bottom: 0.4rem;
+      h5 {
+        font-family: Shrikhand, "Times New Roman", Times, serif;
+        font-size: 1.1rem;
+        font-weight: bolder;
+        padding-top: 1rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0rem;
+      }
+      .fas {
+        padding-right: 0.4rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
 
 //RESPONSIVE TABLETTE
+@media screen and (max-width: 353px) {
+  .fonctionnement .fonctionnement_item .fas {
+    font-size: 0.9rem;
+  }
+  .fonctionnement .fonctionnement_item h6 {
+    font-size: 0.9rem;
+  }
+}
 @media screen and (min-width: 420px) {
   header {
     h1 {
