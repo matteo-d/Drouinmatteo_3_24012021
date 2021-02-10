@@ -125,6 +125,10 @@ header {
 main {
   background-color: #f6f6f6;
   padding-bottom: 3rem;
+  a {
+    text-decoration: none;
+    outline: none;
+  }
   h2 {
     padding: 1.5rem 2rem 1rem 2rem;
   }
@@ -145,6 +149,10 @@ main {
       }
     }
     .conteneur_photo {
+      a {
+        text-decoration: none;
+        outline: none;
+      }
       .photo_restaurant {
         position: relative;
         height: 11rem;
@@ -173,6 +181,10 @@ main {
       box-shadow: 2px 6px 2px #f0ecec;
       margin: 0rem;
       padding: 0rem;
+      a {
+        text-decoration: none;
+        outline: none;
+      }
     }
     article {
       flex: 11;

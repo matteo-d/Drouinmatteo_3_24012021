@@ -301,6 +301,11 @@ main {
   padding-bottom: 3rem;
 }
 
+main a {
+  text-decoration: none;
+  outline: none;
+}
+
 main h2 {
   padding: 1.5rem 2rem 1rem 2rem;
 }
@@ -325,6 +330,11 @@ main .restaurant_item:hover {
 main .restaurant_item:hover i.fas {
   -webkit-animation: heart_animation 300ms ease-in-out forwards;
           animation: heart_animation 300ms ease-in-out forwards;
+}
+
+main .restaurant_item .conteneur_photo a {
+  text-decoration: none;
+  outline: none;
 }
 
 main .restaurant_item .conteneur_photo .photo_restaurant {
@@ -361,6 +371,11 @@ main .restaurant_item .conteneur_sous_photo {
           box-shadow: 2px 6px 2px #f0ecec;
   margin: 0rem;
   padding: 0rem;
+}
+
+main .restaurant_item .conteneur_sous_photo a {
+  text-decoration: none;
+  outline: none;
 }
 
 main .restaurant_item article {
