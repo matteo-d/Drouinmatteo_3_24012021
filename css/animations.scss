@@ -1,18 +1,18 @@
 // ANIMATION ACCEUIL
 
-/*HEART ANIMATION*/
+/*HEART ANIMATION
 @mixin anim_coeur {
   @keyframes heart_animation {
-    from {
+    0% {
       font-size: 0rem;
     }
 
-    to {
+    100% {
       font-size: 1.6rem;
     }
   }
 }
-
+*/
 // ANIMATION MENU
 
 // APPARITION PROGRESSIVE
@@ -26,41 +26,43 @@
     }
   }
 }
-// ANIMATION CHECK
+/* ANIMATION CHECK
 
 @mixin anim_green_translate {
   @keyframes animation_background {
-    from {
+    0% {
       width: 0;
       opacity: 0;
     }
-    to {
+    100% {
       width: 17%;
       opacity: 1;
     }
   }
 }
 
-@mixin anim_check {
-  @keyframes circle_spinning {
-    from {
-      transform: rotate(0turn);
-    }
-    to {
-      transform: rotate(1turn);
-    }
-  }
-}
+
 
 @mixin anim_green_translate_reverse {
   @keyframes animation_background_reverse {
-    from {
+    0% {
       width: 17%;
       opacity: 1;
     }
-    to {
+    100% {
       width: 0;
       opacity: 0;
+    }
+  }
+}
+*/
+@mixin anim_check {
+  @keyframes circle_spinning {
+    0% {
+      transform: rotate(0turn);
+    }
+    100% {
+      transform: rotate(1turn);
     }
   }
 }

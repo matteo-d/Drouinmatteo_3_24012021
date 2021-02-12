@@ -1,4 +1,16 @@
-/*HEART ANIMATION*/
+/*HEART ANIMATION
+@mixin anim_coeur {
+  @keyframes heart_animation {
+    0% {
+      font-size: 0rem;
+    }
+
+    100% {
+      font-size: 1.6rem;
+    }
+  }
+}
+*/
 @-webkit-keyframes hideLoadingSpinner {
   0% {
     z-index: 1;
@@ -94,36 +106,18 @@
   opacity: 1;
 }
 
-@-webkit-keyframes heart_animation {
-  from {
-    font-size: 0rem;
-  }
-  to {
-    font-size: 1.6rem;
-  }
-}
-
-@keyframes heart_animation {
-  from {
-    font-size: 0rem;
-  }
-  to {
-    font-size: 1.6rem;
-  }
-}
-
 body {
   font-family: Roboto, "Times New Roman", Times, serif;
   margin: 0;
   padding: 0;
 }
 
-body a {
+a {
   text-decoration: none;
   outline: none;
 }
 
-body li {
+li {
   list-style: none;
 }
 
@@ -301,11 +295,6 @@ main {
   padding-bottom: 3rem;
 }
 
-main a {
-  text-decoration: none;
-  outline: none;
-}
-
 main h2 {
   padding: 1.5rem 2rem 1rem 2rem;
 }
@@ -316,12 +305,15 @@ main .restaurant_item {
 
 main .restaurant_item i.far {
   font-size: 1.4rem;
-  border: black;
+  -webkit-transition: 250ms;
+  transition: 250ms;
 }
 
 main .restaurant_item i.fas {
   font-size: 0rem;
   color: #f55eca;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 main .restaurant_item:hover {
@@ -329,13 +321,11 @@ main .restaurant_item:hover {
 }
 
 main .restaurant_item:hover i.fas {
-  -webkit-animation: heart_animation 300ms ease-in-out forwards;
-          animation: heart_animation 300ms ease-in-out forwards;
+  font-size: 1.6rem;
 }
 
-main .restaurant_item .conteneur_photo a {
-  text-decoration: none;
-  outline: none;
+main .restaurant_item:hover i.far {
+  font-size: 0.4;
 }
 
 main .restaurant_item .conteneur_photo .photo_restaurant {
@@ -372,11 +362,6 @@ main .restaurant_item .conteneur_sous_photo {
           box-shadow: 2px 6px 2px #f0ecec;
   margin: 0rem;
   padding: 0rem;
-}
-
-main .restaurant_item .conteneur_sous_photo a {
-  text-decoration: none;
-  outline: none;
 }
 
 main .restaurant_item article {
@@ -429,7 +414,7 @@ footer ul li {
   padding-bottom: 0.4rem;
 }
 
-footer ul li h5 {
+footer ul li h6 {
   font-family: Shrikhand, "Times New Roman", Times, serif;
   font-size: 1.1rem;
   font-weight: bolder;
@@ -441,108 +426,6 @@ footer ul li h5 {
 footer ul li .fas {
   padding-right: 0.4rem;
   font-size: 0.8rem;
-}
-
-@media screen and (max-width: 270px) {
-  .fonctionnement .fonctionnement_item .fas {
-    font-size: 0.5rem;
-  }
-  .fonctionnement .fonctionnement_item h6 {
-    font-size: 0.5rem;
-  }
-}
-
-@media screen and (max-width: 315px) {
-  .fonctionnement .fonctionnement_item .fas {
-    font-size: 0.9rem;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .fonctionnement .fonctionnement_item h6 {
-    font-size: 0.9rem;
-    margin-right: 0.2rem;
-  }
-  main .restaurant_item .conteneur_photo .photo_restaurant {
-    height: 10rem;
-  }
-}
-
-@media screen and (max-width: 353px) {
-  .fonctionnement .fonctionnement_item .fas {
-    font-size: 0.9rem;
-  }
-  .fonctionnement .fonctionnement_item h6 {
-    font-size: 0.9rem;
-  }
-  @-webkit-keyframes loadingSpinner {
-    0% {
-      letter-spacing: 0.2rem;
-    }
-    50% {
-      color: #ff79da;
-    }
-    90% {
-      letter-spacing: 0.7rem;
-      opacity: 1;
-    }
-    100% {
-      z-index: -3;
-      opacity: 0;
-    }
-  }
-  @keyframes loadingSpinner {
-    0% {
-      letter-spacing: 0.2rem;
-    }
-    50% {
-      color: #ff79da;
-    }
-    90% {
-      letter-spacing: 0.7rem;
-      opacity: 1;
-    }
-    100% {
-      z-index: -3;
-      opacity: 0;
-    }
-  }
-  .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: white;
-    -webkit-animation: hideLoadingSpinner 0.5s ease-out 2.4s 1 forwards;
-            animation: hideLoadingSpinner 0.5s ease-out 2.4s 1 forwards;
-    opacity: 1;
-    z-index: 1;
-  }
-  .container span {
-    text-transform: uppercase;
-    display: block;
-  }
-  .text1 {
-    color: #9356dc;
-    font-family: Shrikhand, "Times New Roman", Times, serif;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    letter-spacing: 4px;
-    margin-bottom: 20px;
-    background: white;
-    position: relative;
-    -webkit-animation: loadingSpinner 1.7s ease-in 1 forwards;
-            animation: loadingSpinner 1.7s ease-in 1 forwards;
-    z-index: 1;
-    opacity: 1;
-  }
 }
 
 @media screen and (min-width: 420px) {
@@ -598,7 +481,7 @@ footer ul li .fas {
   }
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 766px) {
   h2 {
     text-align: center;
   }

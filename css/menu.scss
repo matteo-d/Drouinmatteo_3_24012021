@@ -1,17 +1,13 @@
 @import "variables.scss";
-@import "mixins.scss";
 @import "animations.scss";
 
-@include anim_green_translate;
 @include anim_check;
-@include anim_coeur;
-@include anim_green_translate_reverse;
 @include progressive_appearence;
 
 body {
   display: flex;
   flex-direction: column;
-  font-family: $policeTexte;
+  font-family: Roboto, "Times New Roman", Times, serif;
   margin: 0;
   padding: 0;
 }
@@ -35,7 +31,7 @@ nav {
     }
   }
   h1 {
-    font-family: $policeTitle;
+    font-family: Shrikhand, "Times New Roman", Times, serif;
     font-size: 1.7rem;
     font-weight: bolder;
     margin-bottom: 0.7rem;
@@ -47,10 +43,22 @@ nav {
 header {
   display: flex;
   flex-direction: column;
+  i.far {
+    font-size: 1.4rem;
+    transition: 250ms;
+  }
+  i.fas {
+    font-size: 0rem;
+    color: #f55eca;
+    transition: 300ms;
+  }
   &:hover {
     cursor: pointer;
     i.fas {
-      animation: heart_animation 300ms ease-in-out forwards;
+      font-size: 1.6rem;
+    }
+    i.far {
+      font-size: 0.4;
     }
   }
   img.restaurantpicture {
@@ -66,23 +74,15 @@ header {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     background-color: #f6f6f6;
+    div.fa-stack {
+      justify-self: flex-end;
+    }
 
     h2 {
-      font-family: $policeTitle;
+      font-family: Shrikhand, "Times New Roman", Times, serif;
       font-size: 1.7rem;
       font-weight: bolder;
       color: black;
-      justify-self: flex-start;
-    }
-    div.fa-stack {
-      display: flex;
-      i.far {
-        font-size: 1.4rem;
-      }
-      i.fas {
-        font-size: 0rem;
-        color: #f55eca;
-      }
     }
   }
 }
@@ -130,7 +130,7 @@ main {
     span.underline {
       border-bottom-style: solid;
       border-bottom-width: 3px;
-      border-bottom-color: $vert;
+      border-bottom-color: #99e2d0;
     }
   }
   .menu_item {
@@ -145,9 +145,10 @@ main {
     opacity: 1;
     cursor: pointer;
     box-shadow: 2px 6px 2px #f0ecec;
+    transition: 1s;
     &:hover {
       .main_container_animation {
-        animation: animation_background 0.5s ease-in-out both;
+        width: 17%;
 
         .fa-check-circle {
           animation: circle_spinning 0.4s ease-in-out both;
@@ -193,18 +194,17 @@ main {
       font-weight: bolder;
     }
     .main_container_animation {
-      width: 0rem;
+      width: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: $vert;
+      background-color: #99e2d0;
       border-top-right-radius: 17px;
       border-bottom-right-radius: 17px;
-      opacity: 0;
-      animation: animation_background_reverse 0.4s ease-in-out both;
+      transition: 0.5s;
     }
     .fa-check-circle {
-      font-size: 1.6rem;
+      font-size: 2rem;
       color: white;
     }
   }
@@ -379,10 +379,10 @@ main {
       linear,
       left top,
       right bottom,
-      from($rose),
-      to($violet)
+      from(#ff79da),
+      to(#9356dc)
     );
-    background: linear-gradient(to bottom right, $rose, $violet);
+    background: linear-gradient(to bottom right, #ff79da, #9356dc);
     color: #fdfafe;
     border-radius: 50px;
     border-style: none;

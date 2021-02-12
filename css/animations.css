@@ -1,2 +1,44 @@
-/*HEART ANIMATION*/
+/*HEART ANIMATION
+@mixin anim_coeur {
+  @keyframes heart_animation {
+    0% {
+      font-size: 0rem;
+    }
+
+    100% {
+      font-size: 1.6rem;
+    }
+  }
+}
+*/
+/* ANIMATION CHECK
+
+@mixin anim_green_translate {
+  @keyframes animation_background {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    100% {
+      width: 17%;
+      opacity: 1;
+    }
+  }
+}
+
+
+
+@mixin anim_green_translate_reverse {
+  @keyframes animation_background_reverse {
+    0% {
+      width: 17%;
+      opacity: 1;
+    }
+    100% {
+      width: 0;
+      opacity: 0;
+    }
+  }
+}
+*/
 /*# sourceMappingURL=animations.css.map */
