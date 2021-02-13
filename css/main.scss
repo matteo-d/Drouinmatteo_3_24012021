@@ -88,13 +88,11 @@ header {
       background-color: #fcf3ff;
       box-shadow: 2px 6px 2px #f0ecec;
     }
-    &:hover {
-      .fa-mobile-alt,
-      .fa-list-ul,
-      .fa-store {
-        color: #9356dc;
-        transform: scale(1.05);
-      }
+    &:hover.fa-mobile-alt,
+    .fa-list-ul,
+    .fa-store {
+      color: #9356dc;
+      transform: scale(1.05);
     }
 
     .fa-mobile-alt,

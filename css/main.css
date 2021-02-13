@@ -233,9 +233,9 @@ header article span.button_visit a {
           box-shadow: 2px 6px 2px #f0ecec;
 }
 
-.fonctionnement .fonctionnement_item:hover .fa-mobile-alt,
-.fonctionnement .fonctionnement_item:hover .fa-list-ul,
-.fonctionnement .fonctionnement_item:hover .fa-store {
+.fonctionnement .fonctionnement_item:hover.fa-mobile-alt,
+.fonctionnement .fonctionnement_item .fa-list-ul,
+.fonctionnement .fonctionnement_item .fa-store {
   color: #9356dc;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
