@@ -98,6 +98,9 @@ main {
     section:nth-of-type(3) {
       animation: progressive_appearence 0.3s ease-out both 0.7s;
     }
+    section:nth-of-type(4) {
+      animation: progressive_appearence 0.3s ease-out both 0.8s;
+    }
   }
   .plat_container {
     section:nth-of-type(1) {
@@ -151,7 +154,7 @@ main {
         width: 17%;
 
         .fa-check-circle {
-          animation: circle_spinning 0.4s ease-in-out both;
+          animation: circle_spinning 0.4s ease-in-out;
         }
       }
     }
@@ -204,7 +207,7 @@ main {
       transition: 0.5s;
     }
     .fa-check-circle {
-      font-size: 2rem;
+      font-size: 1.4rem;
       color: white;
     }
   }

@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAEA;;;;;;;;;;;;EAYE;AAcF;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EA6BE",
+    "mappings": "AAaA,oBAAoB",
     "sources": [
         "animations.scss"
     ],

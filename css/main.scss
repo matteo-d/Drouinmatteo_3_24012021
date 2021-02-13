@@ -206,7 +206,7 @@ main {
 @include footer_acceuil;
 
 //RESPONSIVE
-@media screen and (min-width: 239px) {
+@media screen and (min-width: 210px) {
   header {
     article {
       padding: 0;
@@ -223,27 +223,54 @@ main {
     }
   }
   .fonctionnement {
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
     h2 {
       padding: 1.5rem 2rem 1rem 2rem;
     }
     .fonctionnement_item {
       display: flex;
+      border-radius: 20px;
+      box-shadow: 2px 2px 2px #e0dfdf;
+      background-color: #f6f6f6;
+      margin: 1rem 1rem 1rem 1rem;
+      padding: 0.7rem 0rem 0.7rem 0.7rem;
+      transition: all 333ms;
+      &:hover {
+        background-color: #fcf3ff;
+        box-shadow: 2px 6px 2px #f0ecec;
+        .fa-mobile-alt,
+        .fa-list-ul,
+        .fa-store {
+          color: #9356dc;
+          transform: scale(1.05);
+        }
+      }
+      .fa-mobile-alt,
+      .fa-list-ul,
+      .fa-store {
+        color: #7e7e7e;
+      }
       .numbers {
-        transform: translate(-1.4rem, 0.2rem);
+        background-color: #9356dc;
+        border-radius: 90%;
+        height: 0.7rem;
+        width: 0.7rem;
+        padding: 0.4rem 0.6rem 0.8rem 0.6rem;
+        color: white;
+        @include flexJustifyAlign;
+        transform: translate(-1.4rem);
       }
       .fas {
         font-size: 1rem;
-        margin: 1rem 0.11rem 0.1rem 0.1rem;
-        transform: translate(-1rem, -0.5rem);
+        margin: 0.5rem 0rem 0rem 0rem;
       }
       h6 {
-        font-size: 0.8rem;
-        margin: 0.1rem;
-        align-self: center;
+        font-size: 0.7rem;
+        margin: 0.5rem 0rem 0rem 0.5rem;
       }
     }
   }
+
   main {
     padding-bottom: 0;
     .restaurant_item {
@@ -281,6 +308,200 @@ main {
         }
       }
     }
+  }
+  footer {
+    ul {
+      padding-bottom: 0.5rem;
+    }
+  }
+  @keyframes hideLoadingSpinner {
+    0% {
+      z-index: 1;
+      opacity: 1;
+    }
+    100% {
+      z-index: -2;
+      opacity: 0;
+    }
+  }
+  @keyframes loadingSpinner {
+    0% {
+      letter-spacing: 0.2rem;
+    }
+    50% {
+      color: #ff79da;
+    }
+    90% {
+      letter-spacing: 0.5em;
+      opacity: 1;
+    }
+    100% {
+      z-index: -3;
+      opacity: 0;
+    }
+  }
+  .text1 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 262px) {
+  .fonctionnement {
+    padding-bottom: 0rem;
+    h2 {
+      padding: 1.5rem 2rem 1rem 2rem;
+    }
+    .fonctionnement_item {
+      .numbers {
+        background-color: #9356dc;
+        border-radius: 90%;
+        height: 0.7rem;
+        width: 0.7rem;
+        padding: 0.4rem 0.6rem 0.8rem 0.6rem;
+        color: white;
+        @include flexJustifyAlign;
+        transform: translate(-1.4rem);
+      }
+      .fas {
+        font-size: 1.2rem;
+        margin: 0.5rem 0rem 0rem 0rem;
+      }
+      h6 {
+        font-size: 0.9rem;
+        margin: 0.5rem 0rem 0rem 1rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 330px) {
+  header {
+    article {
+      padding-bottom: 1rem;
+      h3 {
+        padding: 0;
+        font-size: 1.5rem;
+      }
+      .text_article {
+        padding: 0.1rem;
+        margin-top: 0.2rem;
+      }
+      span.button_visit {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .fonctionnement {
+    padding-bottom: 1rem;
+    h2 {
+      padding: 0.2rem 2rem 1rem 2rem;
+    }
+    .fonctionnement_item {
+      .numbers {
+        background-color: #9356dc;
+        border-radius: 90%;
+        height: 0.7rem;
+        width: 0.7rem;
+        padding: 0.4rem 0.6rem 0.8rem 0.6rem;
+        color: white;
+        @include flexJustifyAlign;
+        transform: translate(-1.4rem);
+      }
+      .fas {
+        font-size: 1.2rem;
+        margin: 0.5rem 0rem 0rem 1rem;
+      }
+      h6 {
+        font-size: 0.9rem;
+        margin: 0.5rem 0rem 0rem 2rem;
+      }
+    }
+  }
+}
+main {
+  padding-bottom: 0;
+  .restaurant_item {
+    padding: 0rem 1rem 1rem 1rem;
+    i.far {
+      font-size: 1.2rem;
+      transition: 250ms;
+    }
+    i.fas {
+      font-size: 0rem;
+      color: #f55eca;
+      transition: 300ms;
+    }
+    &:hover {
+      cursor: pointer;
+      i.fas {
+        font-size: 1.4rem;
+      }
+      i.far {
+        font-size: 0.4;
+      }
+    }
+    .conteneur_photo {
+      .photo_restaurant {
+        height: 12rem;
+      }
+    }
+
+    article {
+      h4 {
+        font-size: 1rem;
+      }
+      h5 {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 370px) {
+  header {
+    article {
+      padding-bottom: 1rem;
+      h3 {
+        padding: 0rem 1.5rem 0rem 1.5rem;
+
+        font-size: 1.5rem;
+      }
+      .text_article {
+        padding: 0rem 1.5rem 0rem 1.5rem;
+        margin-top: 0.2rem;
+      }
+      span.button_visit {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 390px) {
+  @keyframes hideLoadingSpinner {
+    0% {
+      z-index: 1;
+      opacity: 1;
+    }
+    100% {
+      z-index: -2;
+      opacity: 0;
+    }
+  }
+  @keyframes loadingSpinner {
+    0% {
+      letter-spacing: 0.2rem;
+    }
+    50% {
+      color: #ff79da;
+    }
+    90% {
+      letter-spacing: 0.7rem;
+      opacity: 1;
+    }
+    100% {
+      z-index: -3;
+      opacity: 0;
+    }
+  }
+  .text1 {
+    font-size: 1.8rem;
   }
 }
 @media screen and (min-width: 420px) {

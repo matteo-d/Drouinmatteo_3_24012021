@@ -1,16 +1,4 @@
-/*HEART ANIMATION
-@mixin anim_coeur {
-  @keyframes heart_animation {
-    0% {
-      font-size: 0rem;
-    }
-
-    100% {
-      font-size: 1.6rem;
-    }
-  }
-}
-*/
+/* ANIMATION CHECK*/
 @-webkit-keyframes hideLoadingSpinner {
   0% {
     z-index: 1;
@@ -414,7 +402,7 @@ footer ul li {
   padding-bottom: 0.4rem;
 }
 
-footer ul li h6 {
+footer ul li h5 {
   font-family: Shrikhand, "Times New Roman", Times, serif;
   font-size: 1.1rem;
   font-weight: bolder;
@@ -426,6 +414,387 @@ footer ul li h6 {
 footer ul li .fas {
   padding-right: 0.4rem;
   font-size: 0.8rem;
+}
+
+@media screen and (min-width: 210px) {
+  header article {
+    padding: 0;
+  }
+  header article h3 {
+    padding: 0;
+    font-size: 1.3rem;
+  }
+  header article .text_article {
+    padding: 0.2rem;
+  }
+  header article span.button_visit {
+    font-size: 0.8rem;
+  }
+  .fonctionnement {
+    padding-bottom: 0rem;
+  }
+  .fonctionnement h2 {
+    padding: 1.5rem 2rem 1rem 2rem;
+  }
+  .fonctionnement .fonctionnement_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 20px;
+    -webkit-box-shadow: 2px 2px 2px #e0dfdf;
+            box-shadow: 2px 2px 2px #e0dfdf;
+    background-color: #f6f6f6;
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 0.7rem 0rem 0.7rem 0.7rem;
+    -webkit-transition: all 333ms;
+    transition: all 333ms;
+  }
+  .fonctionnement .fonctionnement_item:hover {
+    background-color: #fcf3ff;
+    -webkit-box-shadow: 2px 6px 2px #f0ecec;
+            box-shadow: 2px 6px 2px #f0ecec;
+  }
+  .fonctionnement .fonctionnement_item:hover .fa-mobile-alt,
+  .fonctionnement .fonctionnement_item:hover .fa-list-ul,
+  .fonctionnement .fonctionnement_item:hover .fa-store {
+    color: #9356dc;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .fonctionnement .fonctionnement_item .fa-mobile-alt,
+  .fonctionnement .fonctionnement_item .fa-list-ul,
+  .fonctionnement .fonctionnement_item .fa-store {
+    color: #7e7e7e;
+  }
+  .fonctionnement .fonctionnement_item .numbers {
+    background-color: #9356dc;
+    border-radius: 90%;
+    height: 0.7rem;
+    width: 0.7rem;
+    padding: 0.4rem 0.6rem 0.8rem 0.6rem;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translate(-1.4rem);
+            transform: translate(-1.4rem);
+  }
+  .fonctionnement .fonctionnement_item .fas {
+    font-size: 1rem;
+    margin: 0.5rem 0rem 0rem 0rem;
+  }
+  .fonctionnement .fonctionnement_item h6 {
+    font-size: 0.7rem;
+    margin: 0.5rem 0rem 0rem 0.5rem;
+  }
+  main {
+    padding-bottom: 0;
+  }
+  main .restaurant_item {
+    padding: 0rem 1rem 1rem 1rem;
+  }
+  main .restaurant_item i.far {
+    font-size: 1.2rem;
+    -webkit-transition: 250ms;
+    transition: 250ms;
+  }
+  main .restaurant_item i.fas {
+    font-size: 0rem;
+    color: #f55eca;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  main .restaurant_item:hover {
+    cursor: pointer;
+  }
+  main .restaurant_item:hover i.fas {
+    font-size: 1.4rem;
+  }
+  main .restaurant_item:hover i.far {
+    font-size: 0.4;
+  }
+  main .restaurant_item .conteneur_photo .photo_restaurant {
+    height: 8rem;
+  }
+  main .restaurant_item article h4 {
+    font-size: 1rem;
+  }
+  main .restaurant_item article h5 {
+    font-size: 0.9rem;
+  }
+  footer ul {
+    padding-bottom: 0.5rem;
+  }
+  @-webkit-keyframes hideLoadingSpinner {
+    0% {
+      z-index: 1;
+      opacity: 1;
+    }
+    100% {
+      z-index: -2;
+      opacity: 0;
+    }
+  }
+  @keyframes hideLoadingSpinner {
+    0% {
+      z-index: 1;
+      opacity: 1;
+    }
+    100% {
+      z-index: -2;
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes loadingSpinner {
+    0% {
+      letter-spacing: 0.2rem;
+    }
+    50% {
+      color: #ff79da;
+    }
+    90% {
+      letter-spacing: 0.5em;
+      opacity: 1;
+    }
+    100% {
+      z-index: -3;
+      opacity: 0;
+    }
+  }
+  @keyframes loadingSpinner {
+    0% {
+      letter-spacing: 0.2rem;
+    }
+    50% {
+      color: #ff79da;
+    }
+    90% {
+      letter-spacing: 0.5em;
+      opacity: 1;
+    }
+    100% {
+      z-index: -3;
+      opacity: 0;
+    }
+  }
+  .text1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 262px) {
+  .fonctionnement {
+    padding-bottom: 0rem;
+  }
+  .fonctionnement h2 {
+    padding: 1.5rem 2rem 1rem 2rem;
+  }
+  .fonctionnement .fonctionnement_item .numbers {
+    background-color: #9356dc;
+    border-radius: 90%;
+    height: 0.7rem;
+    width: 0.7rem;
+    padding: 0.4rem 0.6rem 0.8rem 0.6rem;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translate(-1.4rem);
+            transform: translate(-1.4rem);
+  }
+  .fonctionnement .fonctionnement_item .fas {
+    font-size: 1.2rem;
+    margin: 0.5rem 0rem 0rem 0rem;
+  }
+  .fonctionnement .fonctionnement_item h6 {
+    font-size: 0.9rem;
+    margin: 0.5rem 0rem 0rem 1rem;
+  }
+}
+
+@media screen and (min-width: 330px) {
+  header article {
+    padding-bottom: 1rem;
+  }
+  header article h3 {
+    padding: 0;
+    font-size: 1.5rem;
+  }
+  header article .text_article {
+    padding: 0.1rem;
+    margin-top: 0.2rem;
+  }
+  header article span.button_visit {
+    font-size: 0.9rem;
+  }
+  .fonctionnement {
+    padding-bottom: 1rem;
+  }
+  .fonctionnement h2 {
+    padding: 0.2rem 2rem 1rem 2rem;
+  }
+  .fonctionnement .fonctionnement_item .numbers {
+    background-color: #9356dc;
+    border-radius: 90%;
+    height: 0.7rem;
+    width: 0.7rem;
+    padding: 0.4rem 0.6rem 0.8rem 0.6rem;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translate(-1.4rem);
+            transform: translate(-1.4rem);
+  }
+  .fonctionnement .fonctionnement_item .fas {
+    font-size: 1.2rem;
+    margin: 0.5rem 0rem 0rem 1rem;
+  }
+  .fonctionnement .fonctionnement_item h6 {
+    font-size: 0.9rem;
+    margin: 0.5rem 0rem 0rem 2rem;
+  }
+}
+
+main {
+  padding-bottom: 0;
+}
+
+main .restaurant_item {
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+main .restaurant_item i.far {
+  font-size: 1.2rem;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+main .restaurant_item i.fas {
+  font-size: 0rem;
+  color: #f55eca;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+main .restaurant_item:hover {
+  cursor: pointer;
+}
+
+main .restaurant_item:hover i.fas {
+  font-size: 1.4rem;
+}
+
+main .restaurant_item:hover i.far {
+  font-size: 0.4;
+}
+
+main .restaurant_item .conteneur_photo .photo_restaurant {
+  height: 12rem;
+}
+
+main .restaurant_item article h4 {
+  font-size: 1rem;
+}
+
+main .restaurant_item article h5 {
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 370px) {
+  header article {
+    padding-bottom: 1rem;
+  }
+  header article h3 {
+    padding: 0rem 1.5rem 0rem 1.5rem;
+    font-size: 1.5rem;
+  }
+  header article .text_article {
+    padding: 0rem 1.5rem 0rem 1.5rem;
+    margin-top: 0.2rem;
+  }
+  header article span.button_visit {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 390px) {
+  @-webkit-keyframes hideLoadingSpinner {
+    0% {
+      z-index: 1;
+      opacity: 1;
+    }
+    100% {
+      z-index: -2;
+      opacity: 0;
+    }
+  }
+  @keyframes hideLoadingSpinner {
+    0% {
+      z-index: 1;
+      opacity: 1;
+    }
+    100% {
+      z-index: -2;
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes loadingSpinner {
+    0% {
+      letter-spacing: 0.2rem;
+    }
+    50% {
+      color: #ff79da;
+    }
+    90% {
+      letter-spacing: 0.7rem;
+      opacity: 1;
+    }
+    100% {
+      z-index: -3;
+      opacity: 0;
+    }
+  }
+  @keyframes loadingSpinner {
+    0% {
+      letter-spacing: 0.2rem;
+    }
+    50% {
+      color: #ff79da;
+    }
+    90% {
+      letter-spacing: 0.7rem;
+      opacity: 1;
+    }
+    100% {
+      z-index: -3;
+      opacity: 0;
+    }
+  }
+  .text1 {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (min-width: 420px) {
