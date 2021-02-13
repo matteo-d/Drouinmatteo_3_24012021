@@ -1,16 +1,3 @@
-/*HEART ANIMATION
-@mixin anim_coeur {
-  @keyframes heart_animation {
-    0% {
-      font-size: 0rem;
-    }
-
-    100% {
-      font-size: 1.6rem;
-    }
-  }
-}
-*/
 /* ANIMATION CHECK*/
 @-webkit-keyframes circle_spinning {
   0% {
@@ -157,15 +144,18 @@ header .sous-partie_header {
   background-color: #f6f6f6;
 }
 
-header .sous-partie_header div.fa-stack {
-  justify-self: flex-end;
-}
-
 header .sous-partie_header h2 {
   font-family: Shrikhand, "Times New Roman", Times, serif;
   font-size: 1.7rem;
   font-weight: bolder;
   color: black;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+header .sous-partie_header div.fa-stack {
+  margin-right: 1rem;
 }
 
 main {
@@ -258,7 +248,7 @@ main .menu_item:hover .main_container_animation {
   width: 17%;
 }
 
-main .menu_item:hover .main_container_animation .fa-check-circle {
+main .menu_item:hover .fa-check-circle {
   -webkit-animation: circle_spinning 0.4s ease-in-out;
           animation: circle_spinning 0.4s ease-in-out;
 }
@@ -374,7 +364,71 @@ main button:hover {
   opacity: 0.9;
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (min-width: 200px) and (max-width: 342px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header i.far {
+    font-size: 1.4rem;
+    -webkit-transition: 250ms;
+    transition: 250ms;
+  }
+  header i.fas {
+    font-size: 0rem;
+    color: #f55eca;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  header:hover {
+    cursor: pointer;
+  }
+  header:hover i.fas {
+    font-size: 1.6rem;
+  }
+  header:hover i.far {
+    font-size: 0.4;
+  }
+  header img.restaurantpicture {
+    height: 15rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header .sous-partie_header {
+    margin-top: -2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 1.5rem;
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #f6f6f6;
+  }
+  header .sous-partie_header h2 {
+    font-family: Shrikhand, "Times New Roman", Times, serif;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: black;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  header .sous-partie_header div.fa-stack {
+    justify-self: flex-end;
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 342px) {
   main .menu_item h4 {
     font-size: 1rem;
   }
@@ -423,6 +477,66 @@ footer ul li .fas {
   nav h1 {
     font-size: 2.4rem;
   }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header i.far {
+    font-size: 1.4rem;
+    -webkit-transition: 250ms;
+    transition: 250ms;
+  }
+  header i.fas {
+    font-size: 0rem;
+    color: #f55eca;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  header:hover {
+    cursor: pointer;
+  }
+  header:hover i.fas {
+    font-size: 1.6rem;
+  }
+  header:hover i.far {
+    font-size: 0.4;
+  }
+  header img.restaurantpicture {
+    height: 45vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header .sous-partie_header {
+    margin-top: -2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 1.5rem;
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #f6f6f6;
+  }
+  header .sous-partie_header h2 {
+    font-family: Shrikhand, "Times New Roman", Times, serif;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: black;
+    -webkit-box-flex: inherit;
+        -ms-flex: inherit;
+            flex: inherit;
+  }
+  header .sous-partie_header div.fa-stack {
+    margin-right: 1rem;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -452,35 +566,6 @@ footer ul li .fas {
 }
 
 @media screen and (min-width: 767px) {
-  header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  header img.restaurantpicture {
-    height: 45vh;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  header .sous-partie_header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  header .sous-partie_header div.fa-stack {
-    -webkit-transform: translateX(1.5rem);
-            transform: translateX(1.5rem);
-  }
   main {
     display: -webkit-box;
     display: -ms-flexbox;

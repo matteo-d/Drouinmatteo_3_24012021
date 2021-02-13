@@ -74,15 +74,15 @@ header {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     background-color: #f6f6f6;
-    div.fa-stack {
-      justify-self: flex-end;
-    }
-
     h2 {
       font-family: Shrikhand, "Times New Roman", Times, serif;
       font-size: 1.7rem;
       font-weight: bolder;
       color: black;
+      flex: 1;
+    }
+    div.fa-stack {
+      margin-right: 1rem;
     }
   }
 }
@@ -152,10 +152,11 @@ main {
     &:hover {
       .main_container_animation {
         width: 17%;
-
-        .fa-check-circle {
-          animation: circle_spinning 0.4s ease-in-out;
-        }
+      }
+    }
+    &:hover {
+      .fa-check-circle {
+        animation: circle_spinning 0.4s ease-in-out;
       }
     }
 
@@ -227,7 +228,56 @@ main {
     }
   }
 }
-@media screen and (max-width: 330px) {
+@media screen and (min-width: 200px) and (max-width: 342px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    i.far {
+      font-size: 1.4rem;
+      transition: 250ms;
+    }
+    i.fas {
+      font-size: 0rem;
+      color: #f55eca;
+      transition: 300ms;
+    }
+    &:hover {
+      cursor: pointer;
+      i.fas {
+        font-size: 1.6rem;
+      }
+      i.far {
+        font-size: 0.4;
+      }
+    }
+    img.restaurantpicture {
+      height: 15rem;
+      object-fit: cover;
+    }
+    .sous-partie_header {
+      margin-top: -2rem;
+      display: flex;
+      align-items: center;
+      padding-left: 1.5rem;
+      background-color: white;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      background-color: #f6f6f6;
+      h2 {
+        font-family: Shrikhand, "Times New Roman", Times, serif;
+        font-size: 1.2rem;
+        font-weight: bolder;
+        color: black;
+        flex: 1;
+      }
+      div.fa-stack {
+        justify-self: flex-end;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 342px) {
   main .menu_item h4 {
     font-size: 1rem;
   }
@@ -247,6 +297,54 @@ main {
   nav {
     h1 {
       font-size: 2.4rem;
+    }
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    i.far {
+      font-size: 1.4rem;
+      transition: 250ms;
+    }
+    i.fas {
+      font-size: 0rem;
+      color: #f55eca;
+      transition: 300ms;
+    }
+    &:hover {
+      cursor: pointer;
+      i.fas {
+        font-size: 1.6rem;
+      }
+      i.far {
+        font-size: 0.4;
+      }
+    }
+    img.restaurantpicture {
+      height: 45vh;
+      object-fit: cover;
+    }
+    .sous-partie_header {
+      margin-top: -2rem;
+      display: flex;
+      justify-content: center;
+
+      padding-left: 1.5rem;
+      background-color: white;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      background-color: #f6f6f6;
+
+      h2 {
+        font-family: Shrikhand, "Times New Roman", Times, serif;
+        font-size: 1.7rem;
+        font-weight: bolder;
+        color: black;
+        flex: inherit;
+      }
+      div.fa-stack {
+        margin-right: 1rem;
+      }
     }
   }
 }
@@ -274,23 +372,6 @@ main {
 }
 
 @media screen and (min-width: 767px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    img.restaurantpicture {
-      height: 45vh;
-      object-fit: cover;
-    }
-    .sous-partie_header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      div.fa-stack {
-        transform: translateX(1.5rem);
-      }
-    }
-  }
-
   main {
     display: flex;
     justify-content: space-evenly;
