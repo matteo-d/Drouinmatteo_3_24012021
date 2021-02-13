@@ -1,51 +1,84 @@
+// APPARITION PROGRESSIVE
 @import "variables.scss";
-@import "animations.scss";
+@keyframes progressive_appearence {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-@include anim_check;
-@include progressive_appearence;
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+/* ANIMATION CHECK*/
+
+@keyframes circle_spinning {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+// ANIMATION ARRIVEE SUR PAGE
+
+@keyframes hideLoadingSpinner {
+  0% {
+    z-index: 1;
+    opacity: 1;
+  }
+  100% {
+    z-index: -2;
+    opacity: 0;
+  }
 }
-body {
-	line-height: 1;
+@keyframes loadingSpinner {
+  0% {
+    letter-spacing: 0.2rem;
+  }
+  50% {
+    color: #ff79da;
+  }
+  90% {
+    letter-spacing: 1rem;
+    opacity: 1;
+  }
+  100% {
+    z-index: -3;
+    opacity: 0;
+  }
 }
-ol, ul {
-	list-style: none;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  animation: hideLoadingSpinner 0.5s ease-out 2.4s 1 forwards;
+  opacity: 1;
+  z-index: 1;
 }
-blockquote, q {
-	quotes: none;
+
+.container span {
+  text-transform: uppercase;
+  display: block;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+.text1 {
+  color: #9356dc;
+  font-family: Shrikhand, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  font-weight: bolder;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  background: white;
+  position: relative;
+  animation: loadingSpinner 1.7s ease-in 1 forwards;
+  z-index: 1;
+  opacity: 1;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
 body {
   display: flex;
   flex-direction: column;
