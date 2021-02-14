@@ -197,7 +197,6 @@ header article span.button_visit:hover {
           transform: scale(1.01);
   -webkit-box-shadow: 3px 3px 3px #7e7e7e;
           box-shadow: 3px 3px 3px #7e7e7e;
-  border-style: none;
   opacity: 0.9;
 }
 

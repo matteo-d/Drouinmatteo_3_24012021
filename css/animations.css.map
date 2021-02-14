@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAaA,oBAAoB",
+    "mappings": "AAWA,oBAAoB",
     "sources": [
         "animations.scss"
     ],
