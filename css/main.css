@@ -212,7 +212,7 @@ header article span.button_visit a {
   padding: 1.5rem 2rem 1rem 2rem;
 }
 
-.fonctionnement .fonctionnement_item {
+.fonctionnement .items_container .fonctionnement_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -226,27 +226,13 @@ header article span.button_visit a {
   transition: all 333ms;
 }
 
-.fonctionnement .fonctionnement_item:hover {
-  background-color: #fcf3ff;
-  -webkit-box-shadow: 2px 6px 2px #f0ecec;
-          box-shadow: 2px 6px 2px #f0ecec;
-}
-
-.fonctionnement .fonctionnement_item:hover.fa-mobile-alt,
-.fonctionnement .fonctionnement_item .fa-list-ul,
-.fonctionnement .fonctionnement_item .fa-store {
-  color: #9356dc;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.fonctionnement .fonctionnement_item .fa-mobile-alt,
-.fonctionnement .fonctionnement_item .fa-list-ul,
-.fonctionnement .fonctionnement_item .fa-store {
+.fonctionnement .items_container .fonctionnement_item .fa-mobile-alt,
+.fonctionnement .items_container .fonctionnement_item .fa-list-ul,
+.fonctionnement .items_container .fonctionnement_item .fa-store {
   color: #7e7e7e;
 }
 
-.fonctionnement .fonctionnement_item .numbers {
+.fonctionnement .items_container .fonctionnement_item .numbers {
   background-color: #9356dc;
   border-radius: 90%;
   height: 0.7rem;
@@ -267,14 +253,23 @@ header article span.button_visit a {
           transform: translate(-1.4rem, 0.8rem);
 }
 
-.fonctionnement .fonctionnement_item .fas {
-  font-size: 1.3rem;
+.fonctionnement .items_container .fonctionnement_item h6 {
+  font-size: 1.1rem;
   margin: 1rem;
 }
 
-.fonctionnement .fonctionnement_item h6 {
-  font-size: 1.1rem;
-  margin: 1rem;
+.fonctionnement .items_container .fonctionnement_item:hover {
+  background-color: #fcf3ff;
+  -webkit-box-shadow: 2px 6px 2px #f0ecec;
+          box-shadow: 2px 6px 2px #f0ecec;
+}
+
+.fonctionnement .items_container .fonctionnement_item:hover .fa-mobile-alt,
+.fonctionnement .items_container .fonctionnement_item:hover .fa-list-ul,
+.fonctionnement .items_container .fonctionnement_item:hover .fa-store {
+  color: #9356dc;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 main {
