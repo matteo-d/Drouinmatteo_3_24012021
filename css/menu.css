@@ -363,6 +363,36 @@ main button:hover {
   opacity: 0.9;
 }
 
+footer {
+  background-color: #353535;
+}
+
+footer ul {
+  padding-left: 1rem;
+  color: #f8f7f7;
+  margin: 0;
+  padding-bottom: 2rem;
+  list-style: none;
+}
+
+footer ul li {
+  padding-bottom: 0.4rem;
+}
+
+footer ul li h6 {
+  font-family: Shrikhand, "Times New Roman", Times, serif;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  padding-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
+}
+
+footer ul li .fas {
+  padding-right: 0.4rem;
+  font-size: 0.8rem;
+}
+
 @media screen and (min-width: 200px) and (max-width: 342px) {
   header {
     display: -webkit-box;
@@ -425,36 +455,6 @@ main button:hover {
     justify-self: flex-end;
     margin-right: 0.5rem;
   }
-}
-
-footer {
-  background-color: #353535;
-}
-
-footer ul {
-  padding-left: 1rem;
-  color: #f8f7f7;
-  margin: 0;
-  padding-bottom: 2rem;
-  list-style: none;
-}
-
-footer ul li {
-  padding-bottom: 0.4rem;
-}
-
-footer ul li h6 {
-  font-family: Shrikhand, "Times New Roman", Times, serif;
-  font-size: 1.1rem;
-  font-weight: bolder;
-  padding-top: 1rem;
-  margin-bottom: 0.5rem;
-  margin-top: 0rem;
-}
-
-footer ul li .fas {
-  padding-right: 0.4rem;
-  font-size: 0.8rem;
 }
 
 @media screen and (max-width: 342px) {
