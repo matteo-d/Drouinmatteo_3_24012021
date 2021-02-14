@@ -542,6 +542,9 @@ footer ul li .fas {
   nav h1 {
     font-size: 2.6rem;
   }
+  main .menu_item .fa-check-circle {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -584,6 +587,9 @@ footer ul li .fas {
   main .menu_item h5 {
     font-size: 0.7rem;
     margin: 0rem 0rem 0.7rem 0.7rem;
+  }
+  main .menu_item .fa-check-circle {
+    font-size: 1.4rem;
   }
   main h3 {
     text-align: center;

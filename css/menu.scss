@@ -356,6 +356,9 @@ main {
       font-size: 2.6rem;
     }
   }
+  main .menu_item .fa-check-circle {
+    font-size: 1.8rem;
+  }
 }
 @media screen and (min-width: 700px) {
   header {
@@ -387,6 +390,9 @@ main {
     .menu_item h5 {
       font-size: 0.7rem;
       margin: 0rem 0rem 0.7rem 0.7rem;
+    }
+    .menu_item .fa-check-circle {
+      font-size: 1.4rem;
     }
     h3 {
       text-align: center;
