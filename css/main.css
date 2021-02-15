@@ -307,7 +307,7 @@ main .restaurant_item:hover i.fas {
 }
 
 main .restaurant_item:hover i.far {
-  font-size: 0.4;
+  font-size: 0.4rem;
 }
 
 main .restaurant_item .conteneur_photo .photo_restaurant {
@@ -512,7 +512,7 @@ footer ul li .fas {
     font-size: 1.4rem;
   }
   main .restaurant_item:hover i.far {
-    font-size: 0.4;
+    font-size: 0.4rem;
   }
   main .restaurant_item .conteneur_photo .photo_restaurant {
     height: 8rem;
@@ -701,7 +701,7 @@ main .restaurant_item:hover i.fas {
 }
 
 main .restaurant_item:hover i.far {
-  font-size: 0.4;
+  font-size: 0.4rem;
 }
 
 main .restaurant_item .conteneur_photo .photo_restaurant {
